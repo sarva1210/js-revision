@@ -1,0 +1,10 @@
+let count = 23;
+console.log(count);
+count++;
+console.log(count);
+++count;
+console.log(count);
+count--;
+console.log(count);
+--count;
+console.log(count);
