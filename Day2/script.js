@@ -21,3 +21,11 @@ test();
 function test() {
     console.log("hello");
 }
+
+hello();
+var hello = function(){
+    console.log("hi"); // this will give an error because hello is not a function at the time of calling
+}
+
+// variable gets hoisted like var , let and const get hoisted but is initialised
+//fuctions are not hoisted fully
