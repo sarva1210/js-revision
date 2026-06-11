@@ -18,3 +18,14 @@ if(0){
 }else{
     console.log("byee");
 } //falsy 
+
+
+if(12>13){
+    console.log("12 is greater");
+}else if(14>15){
+    console.log("14 is greater");
+}else if(15>16){
+    console.log("13 is greater");
+}else{
+    console.log("non are true");
+}
