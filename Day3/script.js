@@ -29,3 +29,24 @@ if(12>13){
 }else{
     console.log("non are true");
 }
+
+
+23 > 13 ? console.log("yes") : console.log("nope");
+
+
+switch(2){
+    case 1:
+        console.log("hi");
+        break;
+    case 2:    
+        console.log("hie");
+        break;
+    case 3:    
+        console.log("heyy");
+        break;
+    case 4:    
+        console.log("hello");
+        break;
+    default:    
+        console.log("default case");
+}
