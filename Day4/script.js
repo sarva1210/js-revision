@@ -19,3 +19,13 @@ for (let i = 10; i > 0; i--) {
 for (let i = 1; i < 6; i++) {
     console.log("yes");   
 }
+
+
+// even or odd 1 to 10
+for (let i = 1; i < 11; i++) {
+    if (i%2===0) {
+        console.log(`${i} - even`);
+    } else {
+        console.log(`${i} - odd`);
+    }
+}
