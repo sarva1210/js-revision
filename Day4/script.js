@@ -38,3 +38,46 @@ if (num%2===0) {
 } else {
     console.log(`${num} is -ve`);
 }
+
+
+// eligible or not
+let age = prompt("tell me your age");
+if (age===null) {
+    console.error("you pressed cancel!!")
+}else if (age>=18) {
+    console.log("you can vote now");
+} else {
+    if (age.trim() === "") {
+        console.error("write properly");
+    }
+    age = Number(age.trim());
+    if (isNaN(age)) {
+        console.error("please enter the number")
+    }
+    console.log("you can not vote now maybe next time");
+}
+
+// NaN === NaN ----> false
+// isNaN(NaN) -----> true
+
+
+// or 
+
+
+let age = prompt("Tell me your age");
+
+if (age === null) {
+    console.error("You pressed cancel!");
+} else if (age.trim() === "") {
+    console.error("Write properly!");
+} else {
+    age = Number(age.trim());
+
+    if (isNaN(age)) {
+        console.error("Please enter a number!");
+    } else if (age >= 18) {
+        console.log("You can vote ^-^");
+    } else {
+        console.log("You cannot vote -_-");
+    }
+}
