@@ -29,3 +29,12 @@ for (let i = 1; i < 11; i++) {
         console.log(`${i} - odd`);
     }
 }
+
+
+// +ve or -ve
+let num = +prompt("tell me your number");
+if (num%2===0) {
+    console.log(`${num} is +ve`);
+} else {
+    console.log(`${num} is -ve`);
+}
