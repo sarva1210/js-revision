@@ -31,3 +31,11 @@ if (pass === null) {
         console.log("Not matched");
     }
 }
+
+
+// print "hi" 10 times using while loop
+let i = 1;
+while (i<=10) {
+    console.log("hi");
+    i++;
+}
