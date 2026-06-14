@@ -39,3 +39,22 @@ while (i<=10) {
     console.log("hi");
     i++;
 }
+
+
+// 3 attemps to enter password if right --> stop , if not "account locked"
+let attempts = 0;
+let opened = false;
+let pwd = "123456";
+let passward = prompt("give passward");
+attempts++;
+if (passward === pwd) opened =true;
+while (passward!== pwd) {
+    if (attempts===3) {
+        console.error("account locked");
+        break;
+    }
+    pwd = prompt("give passward");
+    if (passward === pwd) opened =true;
+    attempts++;
+}
+if(opened === true) console.log("account opened");
