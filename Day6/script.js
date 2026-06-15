@@ -53,3 +53,36 @@ for (let i = 0; i < 21; i++) {
         count++;
     }
 }
+
+
+// Ask user 6 numbers. Count how many are positive
+counter = 0;
+for (let i = 1; i <= 6; i++) {
+    let num = +prompt("give number");
+    if(num>=0) counter++;
+}
+console.log(counter);
+
+
+// do while in js
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i<11);
+
+
+// recursion in js -> function calling function
+function abc(n){
+    if (n===0) return;
+    console.log(n);
+    abc(n-1);
+}
+abc(4);
+
+
+// continue
+for (let i = 0; i < 11; i++) {
+    if(i===5) continue;
+    console.log(i);
+}
