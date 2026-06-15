@@ -86,3 +86,21 @@ for (let i = 0; i < 11; i++) {
     if(i===5) continue;
     console.log(i);
 }
+
+
+// ATM simulator -> allow 3 withdraws start with 1000 balance . ask withdrawal amt 3 times. if enough-> deduct, else-> print "insufficient balance"
+let balance = 4000;
+let flag = false;
+let count = 0;
+while (balance>0 && count!==3) {
+    let withdrawal = +prompt("how much do you want to withdrawal: ");
+    count++;
+    if (withdrawal<=balance) balance -= withdrawal;
+    else{
+        flag=true;
+        break;
+    }
+}
+if (flag === true) {
+    console.log("insufficient amount");
+}
