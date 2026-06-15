@@ -33,3 +33,23 @@ while (num%2 !== 0) {
     num = prompt("tell numbers");
     num = Number(num);
 }
+
+
+// Print numbers between two user inputs Input start and end using prompt()
+let start = prompt("start");
+let end = prompt("end");
+if (start>end ) console.error("start cant be bigger than end");
+for (let i = start; i <= end; i++) {
+    console.log(i);
+}
+
+
+// Print only first 3 odd numbers from 1 to 20
+let count = 0;
+for (let i = 0; i < 21; i++) {
+    if(count === 3) break;
+    if (i%2 !== 0) {
+        console.log(i);
+        count++;
+    }
+}
