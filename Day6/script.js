@@ -14,3 +14,22 @@ for (let i = 0; i < 51; i++) {
         console.log(i);
     }
 }
+
+
+// sum of all odd numbers from 1 to 100
+let sum = 0;
+for (let i = 0; i < 101; i++) {
+    if (i%2 !== 0) {
+        sum = sum + i;
+    }
+}
+console.log(sum);
+
+
+// Keep asking number until user enters an even number Stop only if input is even.
+let num = prompt("tell numbers");
+num = Number(num);
+while (num%2 !== 0) {
+    num = prompt("tell numbers");
+    num = Number(num);
+}
