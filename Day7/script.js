@@ -16,3 +16,34 @@ function ab(a,b,...c) {
     console.log(a,b,c);
 }
 ab(1,2,3,4,5,6);
+
+
+b();
+function b(){
+    console.log("js");
+}
+
+
+// function hoisting -> When you use function declaration, entire function goes to top.
+sayHello();
+function sayHello() {
+  console.log("Hello");
+}
+
+
+function abcd({name,age}){
+    console.log(name,age);
+}
+abcd({name:"sarva", age: "19"}); //destructed
+
+
+function value(...val) {
+    console.log(val);
+}
+value(1,2,3,4,5,6,7,8,9); //rest
+
+
+function values(a,b,c) {
+    console.log(a,b,c);
+}
+values(1,2) //default
