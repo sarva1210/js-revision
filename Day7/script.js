@@ -66,3 +66,24 @@ function gh(a,b,c,d) {
 }//spread
 let arr = [5,6,7,8];
 gh(...arr);
+
+
+function abcd() {
+    function defg() {
+        console.log("defg will work");
+    }
+    defg(); //nested function -> function inside function
+}
+abcd();
+
+
+// scope chain
+let a = 12; //globel scope
+function abcd() {
+    let b = 14; //scoping
+    function defg() {
+        console.log(b);
+    }
+    defg();
+}
+console.log(a);
