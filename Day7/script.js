@@ -34,7 +34,7 @@ function sayHello() {
 function abcd({name,age}){
     console.log(name,age);
 }
-abcd({name:"sarva", age: "19"}); //destructed
+abcd({name:"emma", age: "19"}); //destructed
 
 
 function value(...val) {
