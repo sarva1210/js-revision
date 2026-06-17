@@ -45,3 +45,33 @@ delete obj.name; //deleting name
 obj.socials.x; // nested objects
 
 let obj2 = new Object();
+
+
+
+// functions
+function sayHello() {
+    console.log("hello js");
+}
+sayHello();
+
+
+// fnc add(a,b) that returns their sum sum and log the result
+function add(a,b) {
+    return a+b;
+}   
+let sum = add(2,3);
+console.log(sum);
+
+
+// fnc with default parameter name = guest that prints hi <name>
+function greet(name = "guest") {
+    console.log("Hi " + name);
+}
+greet("emma");
+
+// or 
+
+function greet(name = "guest"){
+    console.log(`Hi ${name}`);
+}
+greet("emma");
