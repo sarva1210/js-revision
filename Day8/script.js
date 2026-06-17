@@ -75,3 +75,28 @@ function greet(name = "guest"){
     console.log(`Hi ${name}`);
 }
 greet("emma");
+
+
+// make a nested fnc where the inner one prints a variable from the outer one
+function parent() {
+    let a = 12;
+    function child(){
+        console.log(a);
+    }
+    child();
+}
+parent();
+
+
+// create an array of 5 fruits . Add one at the end and one from the beginning
+let arr = ["apple" , "guava" , "watermelon" , "banana", "grapes"];
+arr.push("mango");
+arr.unshift("orange");
+
+
+// use a for loop to print all elements of an array
+let arry = ["apple" , "guava" , "watermelon" , "banana", "grapes"];
+for (let i = 0; i < arry.length; i++) {
+    console.log(arry[i]);
+}
+
