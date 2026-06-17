@@ -29,3 +29,19 @@ let arr8 = [...arr4];
 arr8.forEach(function(val){
     console.log(val);
 })
+
+
+let obj = {
+    name:"emma",
+    age:19,
+    email:"emma@gmail.com",
+    socials:{
+        instagram:"emmawee",
+        x:"emmaweeee"
+    }
+};
+obj.name; //accessing name
+delete obj.name; //deleting name
+obj.socials.x; // nested objects
+
+let obj2 = new Object();
