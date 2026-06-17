@@ -1,0 +1,21 @@
+let arr = [1,2,3,4,5,6,7,8,9];
+console.log (arr[5]); //to access elements arr[1];
+
+// array methods
+let arr2 = [];
+let arr3 = new Array();
+
+// array operations
+let arr4 = [1,2,3,4,5,6,7,8,9];
+arr4.push(10); // adds 10 to the end
+arr4.pop(); //removes last value
+arr4.shift(); // 1 removed
+arr4.unshift(1);
+// arr4.indexOf(4);  shows index of 4
+let[a, ,b] = arr4;
+let arr5 = arr4.filter(function(val){
+    return val < 5;
+});
+let arr6 = [...arr4]; //spread operator
+
+
