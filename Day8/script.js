@@ -19,3 +19,13 @@ let arr5 = arr4.filter(function(val){
 let arr6 = [...arr4]; //spread operator
 
 
+let arr7 = [...arr4];
+for (let i = 0; i < 5; i++) {
+    console.log(arr7[i]);
+}
+
+
+let arr8 = [...arr4];
+arr8.forEach(function(val){
+    console.log(val);
+})
