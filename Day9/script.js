@@ -43,3 +43,16 @@ function parent() {
     child();
 }
 parent();
+
+
+// create an obj person with keys name, age and city and print each key's value
+let obj = {
+    name: "emma",
+    age: 19,
+    city:"bhopal",
+};
+
+for(let key in obj){
+    console.log(key);
+    console.log(obj[key]);
+}
