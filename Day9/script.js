@@ -26,9 +26,20 @@ addunlimitednumbs(1,2,3,4);
 
 
 function addunlimitednumber(...nums) {
-    let ans = nums.reduce(function(acc, val){ //reduce->convert array into 1 value 
+    let ans = nums.reduce(function(acc, val){ //reduce -> convert array into 1 value 
         return acc + val
     }, 0); //0 is the value of acc 
     console.log(ans);
 }
 addunlimitednumber(1,2,3,4,5,6,7,8,9);
+
+
+// make a nested fnc where the inner one prints a variable from the outer one
+function parent() {
+    let a = 12;
+    function child(){
+        console.log(a);
+    }
+    child();
+}
+parent();
