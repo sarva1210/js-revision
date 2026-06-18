@@ -56,3 +56,9 @@ for(let key in obj){
     console.log(key);
     console.log(obj[key]);
 }
+
+
+// use setTimeout() to log "Time's up!" after 5 seconds
+setTimeout(()=>{
+    console.log("Time's up!");
+},5000);
