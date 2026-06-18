@@ -99,4 +99,3 @@ let arry = ["apple" , "guava" , "watermelon" , "banana", "grapes"];
 for (let i = 0; i < arry.length; i++) {
     console.log(arry[i]);
 }
-
