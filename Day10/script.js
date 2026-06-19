@@ -75,3 +75,27 @@ let objt = {
     },
 };
 objt.fnc(); //window object bcoz here parent function is fnc and fnc2 is a normal function so "this" will refer to the window object in the normal function.
+
+
+// Given an array of numbers, use `map()` to create a new array where each number is squared.
+let arr = [1,3,5,7,9];
+let newarr = arr.map(function(val){
+    return val*val;
+});
+console.log(newarr);
+
+
+// Use `filter()` to get only even numbers from an array.
+let arr2 = [1,2,3,4,5,6,7,8,9,10];
+let arr3 = arr2.filter(function(val){
+    return val%2===0;
+});
+console.log(arr3);
+
+
+// Use `reduce()` to find the total salary from an array of numbers `[1000, 2000, 3000]`.
+let salary = [10000, 20000, 30000];
+let ans = salary.reduce(function(acc,val){
+    return acc+val;
+},0);
+console.log(ans);
