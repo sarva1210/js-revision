@@ -44,3 +44,17 @@ for (let i = 1; i <= n; i++) {
     factorial*=i;
 }
 console.log(factorial);
+
+
+// Print all keys and values of an object using for...in.
+let obj = {name:"sarva", age:19};
+for(let key in obj){
+    console.log(key,obj[key]);
+}
+
+
+// Print characters of a string one-by-one using a loop.
+let string = "js-revision";
+for (let i = 0; i < string.length; i++) {
+    console.log(string[i]);
+}
