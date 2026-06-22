@@ -26,3 +26,21 @@ for (let i = arr.length - 1; i >= 0; i--) {
     rev.push(arr[i]);
 }
 console.log(rev);
+
+
+// Find the sum of all numbers in an array using a loop.
+let arr4 = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let num of arr4) {
+    sum += num;
+}
+console.log(sum);
+
+
+// Calculate the factorial of a number using a loop.
+let n = 5;
+let factorial = 1;
+for (let i = 1; i <= n; i++) {
+    factorial*=i;
+}
+console.log(factorial);
