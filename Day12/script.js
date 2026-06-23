@@ -28,3 +28,15 @@ class Car {
 
 const car1 = new Car("BMW", 5000000);
 car1.drive();
+
+
+// A constructor is a special method inside a class that initializes object properties.
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+const stud1 = new Student("john", 18);
+
+
