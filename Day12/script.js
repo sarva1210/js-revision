@@ -37,6 +37,20 @@ class Student {
     this.age = age;
   }
 }
-const stud1 = new Student("john", 18);
+const stud1 = new Student("John", 18);
 
 
+// Every function in JavaScript has a prototype, which is used to share methods across all objects created from that function.
+
+// Example Without Classes
+function Person(name) {
+  this.name = name;
+}
+// Adding method using prototype
+
+Person.prototype.sayHi = function () {
+  console.log(`Hi, I am ${this.name}`);
+};
+
+const person1 = new Person("John");
+person1.sayHi();
