@@ -8,3 +8,12 @@ const obj = {
   }
 };
 obj.show();
+
+
+// Calls a function with a specific `this` value.
+// The `call()` method allows you to invoke a function and explicitly set the value of `this` within that function. 
+// It takes the first argument as the value to be used as `this`, followed by any additional arguments that the function may require.
+function hello() {
+  console.log(`Hello ${this.name}`);
+}
+hello.call({ name: "John" });
