@@ -53,11 +53,52 @@ show();  // window
 
 
 // 3. ES5 Function Inside Object -> `this = object`
-const obj = {
+const obj1 = {
   name: "Josh",
   getName: function () {
     console.log(this);  // obj
   }
 };
 
-obj.getName();
+obj1.getName();
+
+
+// 4. ES6 Arrow Function Inside Object -> `this = window`
+// Arrow functions do not bind `this`.
+const obj2 = {
+  name: "John",
+  show: () => {
+    console.log(this);  // window
+  }
+};
+obj2.show();
+
+
+// 5. ES5 Function inside ES5 Function -> `this = window`
+// Nested functions lose the outer `this`.
+const obj3 = {
+  name: "John",
+  outer() {
+    function inner() {
+      console.log(this);  // window
+    }
+    inner();
+  }
+};
+obj3.outer();
+
+
+// Solution use arrow function to preserve `this` from outer function.
+
+// 6. Arrow Function inside ES5 Function => `this = object`
+// Arrow function copies `this` from outer function.
+const obj4 = {
+  name: "Josh",
+  outer() {
+    const inner = () => {
+      console.log(this);  // obj
+    };
+    inner();
+  }
+};
+obj4.outer();
