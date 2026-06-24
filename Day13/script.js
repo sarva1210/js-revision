@@ -38,3 +38,26 @@ function welcome() {
 }
 const newFn = welcome.bind({ user: "Sarva" });
 newFn()
+
+// more examples of `this` in different contexts:
+
+// 1. Global Scope -> `this = window`
+console.log(this);  // window (in browser)
+
+
+// 2. Normal Function -> `this = window` (non–strict mode)
+function show() {
+  console.log(this);  
+}
+show();  // window
+
+
+// 3. ES5 Function Inside Object -> `this = object`
+const obj = {
+  name: "Josh",
+  getName: function () {
+    console.log(this);  // obj
+  }
+};
+
+obj.getName();
