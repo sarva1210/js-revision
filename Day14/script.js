@@ -69,3 +69,26 @@ Animal2.prototype.speak = function () {
 
 const cat = new Animal2("Kitty");
 cat.speak();
+
+
+// Getter & Setter
+// Getters and setters are special methods that allow you to define how to access and modify the properties of an object. 
+// They provide a way to encapsulate the internal representation of an object and control how its properties are accessed or modified.
+class User {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name.toUpperCase();
+  }
+
+  set name(value) {
+    this._name = value;
+  }
+}
+
+const u = new User("Josh");
+console.log(u.name);
+u.name = "heyy!!";
+console.log(u.name);
