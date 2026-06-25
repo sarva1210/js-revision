@@ -49,3 +49,23 @@ class Dog extends Animal {
 const d = new Dog();
 d.speak();
 d.bark();
+
+
+// Constructor Functions (Before ES6)
+function Animal1() {
+  this.name = "cat";
+}
+new Animal1();
+
+
+// Adding Methods Using Prototype
+function Animal2(name) {
+  this.name = name;
+}
+
+Animal2.prototype.speak = function () {
+  console.log(this.name + " makes a sound");
+};
+
+const cat = new Animal2("Kitty");
+cat.speak();
