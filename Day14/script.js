@@ -21,3 +21,31 @@ const Car = class CarClass {
 
 const c = new Car("BMW");
 console.log(c.model);
+
+
+// Hoisting in Classes
+// class declarations are not hoisted like function declarations. 
+// This means that you cannot use a class before it is defined in the code. If you try to do so, you'll get a ReferenceError.
+
+// const obj = new Student();  // ReferenceError
+// class Student {
+//   constructor() {}
+// }
+
+// Inheritance (`extends`)
+
+class Animal {
+  speak() {
+    console.log("Animal speaks");
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log("Dog barks");
+  }
+}
+
+const d = new Dog();
+d.speak();
+d.bark();
