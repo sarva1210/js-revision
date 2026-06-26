@@ -12,7 +12,7 @@ user.login()
 
 
 // Imagine you now have 5 users. First, think how you would manage them without using a class. Then convert the same logic using a class and observe how the code becomes cleaner. Write code for both approaches
-class user {
+class userr {
     constructor(name, email){
         this.name = name;
         this.email = email;
@@ -22,11 +22,11 @@ class user {
     }
 }
 
-const user1 = new user("John Doe", "johndoe@gmail.com");
-const user2 = new user("Jane Smith", "janesmith@gmail.com");
-const user3 = new user("Bob Johnson", "bobjohnson@gmail.com");
-const user4 = new user("Alice Williams", "alicewilliams@gmail.com");
-const user5 = new user("Charlie Brown", "charliebrown@gmail.com");
+const user1 = new userr("John Doe", "johndoe@gmail.com");
+const user2 = new userr("Jane Smith", "janesmith@gmail.com");
+const user3 = new userr("Bob Johnson", "bobjohnson@gmail.com");
+const user4 = new userr("Alice Williams", "alicewilliams@gmail.com");
+const user5 = new userr("Charlie Brown", "charliebrown@gmail.com");
 
 user1.login();
 user2.login();
@@ -100,3 +100,30 @@ const obj = {
 obj.normalFunc();
 obj.arrowFunc();
 
+
+// Create a User constructor function (do not use class syntax). 
+function User8(name) {
+  this.name = name;
+  this.login = function () {
+    console.log(`${this.name} logged in`);
+  }
+}
+
+
+// Add a login method in two ways: First, inside the constructor Then, move the method to the prototype 
+function User9(name) {
+  this.name = name;
+}
+
+User9.prototype.login = function () {
+  console.log(`${this.name} logged in`);
+};
+
+const uA = new User9("Alex");
+const uB = new User9("Bob");
+
+uA.login();
+uB.login();
+
+// compare login methods of both users and verify that they are the same function.
+console.log(uA.login === uB.login); // true
