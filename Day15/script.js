@@ -33,3 +33,16 @@ user2.login();
 user3.login();
 user4.login();
 user5.login();
+
+
+// Create a product object that stores name and price and has a method which returns the final price after discount. 
+const product = {
+  name: "Laptop",
+  price: 80000,
+  discount: 20,
+  finalPrice: function () {
+    return this.price - (this.price * this.discount / 200);
+  }
+};
+
+console.log(product.finalPrice());
