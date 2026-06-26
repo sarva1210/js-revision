@@ -127,3 +127,33 @@ uB.login();
 
 // compare login methods of both users and verify that they are the same function.
 console.log(uA.login === uB.login); // true
+
+ 
+// Create an object that contains a name property. Use call to run the function using the object Use apply to run the function using the object Use bind to create a new function and then call it .
+const person = {
+    name: "Alice"
+};
+
+function printName() {
+    console.log(`Name: ${this.name}`);
+}
+
+printName.call(person);
+printName.apply(person);
+const newFunc = printName.bind(person);
+newFunc();
+
+
+// Borrow a method from one object and run it for another object using call.
+const obj1 = {
+  name: "Alice",
+  greet: function () {
+    console.log(`Hello ${this.name}`);
+  }
+};
+
+const obj2 = {
+  name: "Tom"
+};
+
+obj1.greet.call(obj2); 
