@@ -46,3 +46,23 @@ const product = {
 };
 
 console.log(product.finalPrice());
+
+
+// Create a Car class with the following: brand speed a drive method that prints the car brand and speed .
+class Car {
+  constructor(brand, speed) {
+    this.brand = brand;
+    this.speed = speed;
+  }
+
+  drive() {
+    console.log(`${this.brand} is driving at ${this.speed} km/h`);
+  }
+}
+
+// Create two different car objects from the same class and verify that their data is different. 
+const car1 = new Car("BMW", 200);
+const car2 = new Car("Audi", 180);
+
+car1.drive();
+car2.drive();
