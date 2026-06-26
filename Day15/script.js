@@ -66,3 +66,37 @@ const car2 = new Car("Audi", 180);
 
 car1.drive();
 car2.drive();
+
+
+// Create a Student class whose constructor accepts name and roll number. Add a method introduce that prints both values.
+class Student {
+  constructor(name, roll) {
+    this.name = name;
+    this.roll = roll;
+  }
+
+  introduce() {
+    console.log(`Hi, I am ${this.name}, Roll No: ${this.roll}`);
+  }
+}
+
+const s1 = new Student("Ram", 25);
+s1.introduce();
+
+
+// Create an object with two methods: One method using a normal function One method using an arrow function Inside both, print this and observe the difference.
+const obj = {
+  name: "John",
+  
+  normalFunc: function () {
+    console.log("Normal:", this);
+  },
+
+  arrowFunc: () => {
+    console.log("Arrow:", this);
+  }
+};
+
+obj.normalFunc();
+obj.arrowFunc();
+
