@@ -32,6 +32,7 @@ abc(function(){
 
 
 // nested callback function
+// This code demonstrates the use of nested callback functions to handle multiple asynchronous operations
 function cde(fn1){
     fn1(function(fn3){
         fn3(function(fn5){
