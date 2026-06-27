@@ -29,3 +29,21 @@ function abc(fn){
 abc(function(){
     console.log("Callback fnc executed");
 })
+
+
+// nested callback function
+function cde(fn1){
+    fn1(function(fn3){
+        fn3(function(fn5){
+            fn5();
+        })
+    })        
+}
+
+function cde(fn2){
+    fn2(function(fn4){
+        fn4(function(){
+            console.log("Nested callback executed");
+        })
+    })        
+}
