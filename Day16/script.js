@@ -48,3 +48,20 @@ function cde(fn2){
         })
     })        
 }
+
+
+// situation-> bring repositry data from github
+// getUserDetails(username, cb)    // JoshDetails(address, cd)
+// getAllRepos(userid, cd)         // findShop(details, cd)
+// getRepoDetails(repos[0], cd)    // takeThings(list, cd)
+                                   // comeBackHome(address, cd)
+
+function JoshDetails(address, cb){
+    console.log("fetching details....")
+    setTimeout(() => {
+        cb({ lat: 23.36, lng: 76.5});
+    }, 3000);
+}
+JoshDetails("indrapuri 231-H Block", function(details){
+    console.log(details);
+});                                      
