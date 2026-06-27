@@ -13,3 +13,19 @@ setTimeout(() => {
 }, 1000);
 
 console.log("Ending asynchronous tasks...");
+
+
+setTimeout(() => {
+  console.log("All Task Done");
+}, 2000);
+
+
+// callback function
+// This code demonstrates the use of a callback function to handle asynchronous operations
+function abc(fn){
+    fn();
+}
+
+abc(function(){
+    console.log("Callback fnc executed");
+})
