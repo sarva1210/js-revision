@@ -58,3 +58,13 @@ function loadDashboard(permissions, cb){
         cb();
     }, 6000);
 }
+
+
+// load Dashboard
+loginUser("Josh", function(userdata){
+    fetchPermission(userdata.id, function(permissions){
+        loadDashboard(permissions, function(){
+            console.log("dashboard loaded");
+        });
+    });
+});
