@@ -32,3 +32,20 @@ getUser("Emma", function(data){
         console.log(data.username, allposts);
     });
 });
+
+
+// login user 
+function loginUser(username, cb){
+    console.log("logging in user...");
+    setTimeout(() => {
+        cb({id:J0sh, username:"Josh"});
+    }, 4000);
+}
+
+// fetch permissions
+function fetchPermission(id, cb){
+    console.log("fetching permissions...");
+    setTimeout(() => {
+        cb(["read", "write", "delete"])
+    }, 5000);
+}
