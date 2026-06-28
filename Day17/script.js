@@ -49,3 +49,12 @@ function fetchPermission(id, cb){
         cb(["read", "write", "delete"])
     }, 5000);
 }
+
+
+// load Dashboard
+function loadDashboard(permissions, cb){
+    console.log("loading dashboard...");
+    setTimeout(() => {
+        cb();
+    }, 6000);
+}
