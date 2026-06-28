@@ -14,7 +14,7 @@ afterDelay(3000, function(){
 function getUser(username, cb){
     console.log("getting user details.....");
     setTimeout(()=>{
-        cb({id:1, username:"Emma"});
+        cb({id:1, username:"J0sh"});
     },1000);
 }
 
@@ -38,7 +38,7 @@ getUser("Emma", function(data){
 function loginUser(username, cb){
     console.log("logging in user...");
     setTimeout(() => {
-        cb({id:J0sh, username:"Josh"});
+        cb({id:1234, username:"Josh"});
     }, 4000);
 }
 
