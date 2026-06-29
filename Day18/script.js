@@ -20,3 +20,15 @@ promise
     .catch(function(){
         console.log("it's rejected");
 });
+
+
+// fetch API
+// The fetch() method is used to make network requests. It returns a promise that resolves to the Response object representing the response to the request.
+fetch('https://randomuser.me/api/')
+  .then((raw)=> raw.json())
+  .then(function(data){
+    console.log(data.results[0].name.first);
+})
+  .catch((error)=>{
+    console.log(error);
+});
