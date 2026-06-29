@@ -42,3 +42,21 @@ async function ab() {
     console.log(data);
 }
 ab();
+
+
+// create a promise that resolves if the random number generated is less than 5 and rejects if it is greater than or equal to 5. Use async/await to handle the promise.
+function getNum(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            let num = Math.floor(Math.random()*10);
+            if(num<5){
+                resolve(true);
+            } else reject(false);
+        }, 3000);
+    });
+}
+
+async function cd() {
+    let v = await getNum();
+    console.log(v);
+}
