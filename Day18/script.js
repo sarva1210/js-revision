@@ -32,3 +32,13 @@ fetch('https://randomuser.me/api/')
   .catch((error)=>{
     console.log(error);
 });
+
+
+// async/await:- works on promise
+// The async/await syntax is a way to work with promises in a more synchronous manner.
+async function ab() {
+    let raw = await fetch('https://randomuser.me/api/');
+    let data = await raw.json();
+    console.log(data);
+}
+ab();
