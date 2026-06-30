@@ -14,3 +14,11 @@ try {
 }
 
 console.log("heyy");
+
+// 2. Throwing Errors: You can throw custom errors using the throw statement.
+function divide(a, b) {
+    if (b === 0) {
+        throw new Error("Division by zero is not allowed.");
+    }
+    return a / b;
+}
