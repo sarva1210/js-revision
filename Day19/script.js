@@ -15,6 +15,7 @@ try {
 
 console.log("heyy");
 
+
 // 2. Throwing Errors: You can throw custom errors using the throw statement.
 function divide(a, b) {
     if (b === 0) {
@@ -22,6 +23,7 @@ function divide(a, b) {
     }
     return a / b;
 }
+
 
 // 3. Try-Catch-Finally: You can use the finally block to execute code regardless of whether an error occurred or not.
 try {
@@ -33,3 +35,15 @@ try {
 finally{
     console.log("heyy");
 }
+
+
+// more example of throwing error
+
+try {
+    let a = 168;
+    console.log(a.name.message);
+} catch(err){
+    throw new Error("something went wrong from our side, please wait for sometime");
+}
+
+
