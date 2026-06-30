@@ -22,3 +22,14 @@ function divide(a, b) {
     }
     return a / b;
 }
+
+// 3. Try-Catch-Finally: You can use the finally block to execute code regardless of whether an error occurred or not.
+try {
+    let a = 23;
+    console.log(a.name.message);
+} catch(err){
+    console.log(err.name);
+}
+finally{
+    console.log("heyy");
+}
