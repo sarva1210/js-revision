@@ -47,3 +47,11 @@ try {
 }
 
 
+try {
+    let a = 12;
+    console.log(a.name.age);
+} catch(err){
+    console.log(
+        new Error("something went wrong from our side, please wait for sometime")
+    );
+}
