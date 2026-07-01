@@ -85,3 +85,26 @@ function sendEmail(email) {
         }, time * 300);
     });
 }
+
+
+// user list of emails to send, using async await to send emails and handle errors
+async function sendEmails(userlist) {
+
+    let allresponses = userlist.map(function (email) {
+        return sendEmail(email)
+            .then(function (data) {
+                return data;
+            })
+            .catch(function (err) {
+                return err;
+            });
+    });
+
+    let ans = await Promise.all(allresponses);
+
+    ans.forEach(function (status) {
+        console.log(status);
+    });
+}
+
+sendEmails(users);
