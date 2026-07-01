@@ -60,3 +60,28 @@ async function getWeather(city) {
 }
 
 getWeather("Las Vegas");
+
+
+// example : email sending using promise and async await
+const users = [
+    "josh@gmail.com",
+    "megan@gmail.com",
+    "deniala@gmail.com"
+];
+
+function sendEmail(email) {
+    return new Promise((resolve, reject) => {
+        let time = Math.floor(Math.random() * 5);
+
+        setTimeout(() => {
+            let probability = Math.floor(Math.random() * 10);
+
+            if (probability <= 5) {
+                resolve("Email successfully sent.");
+            } else {
+                reject("Email not sent..");
+            }
+
+        }, time * 300);
+    });
+}
