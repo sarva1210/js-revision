@@ -28,6 +28,6 @@ function debounce(fn, delay){
 
 document.querySelector('#search')
 .addEventListener("input", debounce(function(){
-    console.log("working");
-},700)
+    console.log("yes its working");
+},1000)
 );
