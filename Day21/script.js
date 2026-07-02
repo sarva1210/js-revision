@@ -32,3 +32,23 @@ document.querySelector('#search')
     console.log("yes its working");
 },1000)
 );
+
+
+// Throttling
+// Limits the execution of a function to once every specified amount of time, regardless of how many times it is called.
+
+function throttle(fn,delay){
+    let last = 0;
+    return function(){
+        const now = Date.now();
+        if(now - last >= delay){
+            last = now;
+            fn();
+        }
+    }
+}
+
+window.addEventListener("mousemove", throttle(function(){
+    console.log("mouse moved")
+},2000)
+);
