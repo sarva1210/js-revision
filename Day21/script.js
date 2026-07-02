@@ -17,6 +17,7 @@ document.querySelector('#search')
 },600)
 );  
 
+// or can be written as timing is different for each function call, so we can use the following code to make it work properly.
 
 function debounce(fn, delay){
     let timer;
