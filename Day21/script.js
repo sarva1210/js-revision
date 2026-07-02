@@ -16,3 +16,18 @@ document.querySelector('#search')
     console.log("working");
 },600)
 );  
+
+
+function debounce(fn, delay){
+    let timer;
+    return function(){
+        clearTimeout(timer);
+        timer = setTimeout(fn, delay);
+    }
+}
+
+document.querySelector('#search')
+.addEventListener("input", debounce(function(){
+    console.log("working");
+},700)
+);
