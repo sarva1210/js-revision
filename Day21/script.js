@@ -52,3 +52,22 @@ window.addEventListener("mousemove", throttle(function(){
     console.log("mouse moved")
 },2000)
 );
+
+
+// or can be written as timing is different for each function call, so we can use the following code to make it work properly.
+
+function throttle(fn,delay){
+    let last = 0;
+    return function(){
+        const now = Date.now();
+        if(now - last >= delay){
+            last = now;
+            fn();
+        }
+    }
+}
+
+window.addEventListener("mousemove", throttle(function(){
+    console.log("cursor moved")
+},4000)
+);
