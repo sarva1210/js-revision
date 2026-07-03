@@ -17,3 +17,6 @@ laptop.increasePrice = function () {
 console.log(laptop.price);
 laptop.increasePrice();
 console.log(laptop.price);
+
+
+// Classes and Objects (Reinforcement)
