@@ -44,3 +44,20 @@ emp3.showDetails();
 
 
 // Constructor and Initialization 
+
+// 7. Create a class named BankAccount. Its constructor should accept accountHolderName and balance. 8. Inside the constructor, store both values using this. 9. Add a method deposit(amount) that increases the balance. 10. Create two bank accounts and deposit money into only one.
+class BankAccount {
+  constructor(accountHolderName, balance) {
+    this.accountHolderName = accountHolderName;
+    this.balance = balance;
+  }
+  deposit(amount) {
+    this.balance += amount;
+  }
+}
+
+const acc1 = new BankAccount("Sammy", 1000);
+const acc2 = new BankAccount("Shane", 2000);
+acc1.deposit(500);
+console.log(acc1.balance); 
+console.log(acc2.balance); 
