@@ -20,3 +20,24 @@ console.log(laptop.price);
 
 
 // Classes and Objects (Reinforcement)
+
+// 4. Create a class named Employee that stores: name salary Add a method showDetails that prints name and salary. 
+// 5. Create three employee objects from the same class and verify that modifying one employee does not affect the others.
+class Employee {
+  constructor(name, salary) {
+    this.name = name;
+    this.salary = salary;
+  }
+
+  showDetails() {
+    console.log(this.name, this.salary);
+  }
+}
+
+const emp1 = new Employee("josh", 20000);
+const emp2 = new Employee("sam", 30000);
+const emp3 = new Employee("mike", 40000);
+emp1.salary = 25000;
+emp1.showDetails();
+emp2.showDetails();
+emp3.showDetails();
