@@ -16,3 +16,7 @@ fn(); // undefined
 
 const fixed = profile.printName.bind(profile);
 fixed(); 
+
+
+// Constructor Function and Prototype
+// it is a function that is used to create objects and set up their properties and methods. It is called with the new keyword, which creates a new instance of the object.
