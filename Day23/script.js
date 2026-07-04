@@ -20,3 +20,18 @@ fixed();
 
 // Constructor Function and Prototype
 // it is a function that is used to create objects and set up their properties and methods. It is called with the new keyword, which creates a new instance of the object.
+
+// 15. Create a constructor function called Vehicle that accepts type and wheels.
+// 16. Add a method describe inside the constructor and observe memory behavior when multiple objects are created.
+function Vehicle(type, wheels) {
+  this.type = type;
+  this.wheels = wheels;
+}
+
+this.describe = function () {
+  console.log(this.type, this.wheels);
+};
+
+Vehicle.prototype.describe = function () {
+  console.log(this.type, this.wheels);
+};
