@@ -13,3 +13,7 @@ const d = { brand: "Apple" };
 
 showBrand.call(a);
 showBrand.call(d);
+
+
+// apply Method Practice
+// apply is a method that allows you to invoke a func with a specific this value and arguments provided as an array (or an array like obj).
