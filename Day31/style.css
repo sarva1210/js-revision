@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'helvetica neue';
-    color: rgb(251, 231, 231);
+    color: rgb(34, 33, 38);
 }
 html,
 body {
@@ -25,14 +25,14 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    background-color: #443c3c;
+    background-color: #65b5c5;
     border-radius: 10px;
     margin-top: 10px;
 }
 
 button{
   background-color: rgb(49, 63, 104);
-  color: #c7c6c6;
+  color: #e6e3e3;
   padding: 10px 30px;
   border-radius: 10px;
 }
