@@ -82,10 +82,13 @@ nav {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-top: -300px;
 }
 
 .right img {
   width: 420px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* badge */
