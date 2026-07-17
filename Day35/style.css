@@ -1,9 +1,317 @@
+/* Reset */
+
 *{
-margin:0%;
-padding:0%;
-box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-html,body{
-width: 100%;
-height: 100%;
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:"Poppins",sans-serif;
+    background:#000;
+}
+
+/* Slider */
+
+.slider{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    transition:1s;
+}
+
+.slide.active{
+    opacity:1;
+    z-index:5;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:scale(1.08);
+    animation:zoom 12s linear infinite alternate;
+}
+
+/* Overlay */
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.55)
+    );
+    z-index:1;
+}
+
+/* Content */
+
+.content{
+    position:absolute;
+    inset:0;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:45px;
+}
+
+/* Top */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.top span{
+    color:white;
+    opacity:.7;
+    font-size:.8rem;
+    letter-spacing:4px;
+}
+
+.top h2{
+    color:white;
+    font-size:2.4rem;
+    font-weight:700;
+    margin-top:6px;
+}
+
+.top button{
+    padding:14px 28px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.35s;
+}
+
+.top button:hover{
+    transform:translateY(-4px);
+    background:rgba(255,255,255,.15);
+}
+
+/* Glass Text */
+
+.glassText{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex:1;
+}
+
+.glassText h1{
+    font-size:11vw;
+    line-height:.85;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:-8px;
+    color:rgba(255,255,255,.08);
+    -webkit-text-stroke:2px rgba(255,255,255,.45);
+    text-shadow:
+    0 0 30px rgba(255,255,255,.15);
+    backdrop-filter:blur(25px);
+}
+
+/* Effect 1 */
+.effect1 .glassText h1{
+    color:rgba(255,255,255,.08);
+}
+
+/* Effect 2 */
+.effect2 .glassText h1{
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.8),
+        rgba(255,255,255,.1)
+    );
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* Effect 3 */
+.effect3 .glassText h1{
+    color:white;
+    text-shadow:
+    0 0 10px white,
+    0 0 25px cyan,
+    0 0 60px cyan;
+}
+
+/* Effect 4 */
+.effect4 .glassText h1{
+    color:rgba(255,255,255,.15);
+    -webkit-text-stroke:1px white;
+}
+
+/* Animation */
+
+@keyframes zoom{
+    from{
+        transform:scale(1.08);
+    }
+
+    to{
+        transform:scale(1.18);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+}
+
+@keyframes shine{
+    from{
+        transform:translateX(-120%) rotate(25deg);
+    }
+
+    to{
+        transform:translateX(250%) rotate(25deg);
+    }
+}
+
+/* Glass Text */
+
+.glassText{
+    position:relative;
+    animation:float 6s ease-in-out infinite;
+}
+
+.glassText::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(50px);
+    top:45%;
+    left:40%;
+    transform:translate(-50%,-50%);
+    filter:blur(10px);
+}
+
+.glassText::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(30px);
+    right:18%;
+    bottom:15%;
+}
+
+/* Shine */
+.glassText h1{
+    position:relative;
+    overflow:hidden;
+}
+
+.glassText h1::before{
+    content:"";
+    position:absolute;
+    top:-30%;
+    left:-120%;
+    width:60%;
+    height:220%;
+    background:linear-gradient(
+        transparent,
+        rgba(255,255,255,.55),
+        transparent
+    );
+    transform:rotate(25deg);
+    animation:shine 5s linear infinite;
+}
+
+/* Mouse Glow */
+.glassText h1:hover{
+    text-shadow:
+    0 0 10px rgba(255,255,255,.5),
+    0 0 25px rgba(255,255,255,.3),
+    0 0 60px rgba(255,255,255,.15);
+}
+
+/* Glass Button */
+.top button{
+    overflow:hidden;
+    position:relative;
+}
+
+.top button::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    transform:translateX(-120%);
+    transition:.6s;
+}
+
+.top button:hover::before{
+    transform:translateX(120%);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+    .content{
+        padding:25px;
+    }
+    .top{
+        flex-direction:column;
+        gap:18px;
+    }
+    .glassText h1{
+        font-size:22vw;
+    }
+
+    .top h2{
+        font-size:1.6rem;
+    }
+}
+
+@media(max-width:600px){
+    .glassText h1{
+        font-size:26vw;
+        letter-spacing:-5px;
+    }
+    .top button{
+        padding:12px 20px;
+        font-size:14px;
+    }
 }
