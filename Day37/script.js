@@ -54,3 +54,11 @@ function updateSpeed() {
         });
     });
 }
+
+console.log(`
+Controls:
+Click = Pause / Resume
++ = Faster
+- = Slower
+R = Reset
+`);
