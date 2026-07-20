@@ -16,3 +16,15 @@ function removeDuplicates(arr){
 }
 
 console.log(removeDuplicates([1,2,2,3,4,4,5]));
+
+
+
+// wap to find missing number
+function missing(arr) {
+    let n = arr.length + 1;
+    let total = (n * (n + 1)) / 2;
+    let actual = arr.reduce((acc, curr) => acc + curr, 0);
+    return total - actual;
+}
+
+console.log(missing([1, 2, 3, 5, 9]));
