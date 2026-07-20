@@ -28,3 +28,11 @@ function missing(arr) {
 }
 
 console.log(missing([1, 2, 3, 5, 9]));
+
+
+// wap to capatalize the first letter of each word in a string
+function capitalize(str) {
+    return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+}
+
+console.log(capitalize("hello world"));
