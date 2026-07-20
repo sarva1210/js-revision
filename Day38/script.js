@@ -36,3 +36,21 @@ function capitalize(str) {
 }
 
 console.log(capitalize("hello world"));
+
+
+
+// wap to Sort Array Without sort()
+function sortArray(arr) {
+    for (let i = 0; i< arr.length; i++) {
+        for (let j=0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+console.log(sortArray([5, 3, 12, 21, 46, 8, 1, 45, 2]));
