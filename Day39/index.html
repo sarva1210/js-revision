@@ -15,12 +15,16 @@
 
         <!-- Generated Password -->
         <div class="password-box">
-            <input
-                type="text"
-                id="password"
-                placeholder="Your password..."
-                readonly
-            >
+            <input 
+            type="password"
+            id="password"
+            placeholder="Your password..."
+            readonly
+        >
+        
+            <button id="toggleBtn">
+                <i class="fa-regular fa-eye"></i>
+            </button>
 
             <button id="copyBtn">
                 <i class="fa-regular fa-copy"></i>
@@ -87,6 +91,15 @@
             <i class="fa-solid fa-bolt"></i>
             Generate Password
         </button>
+
+        <div class="history">
+            <h3>Recent Passwords</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+        <div id="toast">
+            Copied Successfully!
+        </div>
 
     </div>
 
