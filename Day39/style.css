@@ -1,9 +1,241 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
-margin:0%;
-padding:0%;
-box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
-html,body{
-width: 100%;
-height: 100%;
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed,#9333ea);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:450px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:20px;
+    padding:30px;
+    color:#fff;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.container h1{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+/* Password Box */
+
+.password-box{
+    display:flex;
+    align-items:center;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+.password-box input{
+    flex:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    padding:16px;
+    color:#fff;
+    font-size:16px;
+}
+
+.password-box input::placeholder{
+    color:rgba(255,255,255,.6);
+}
+
+.password-box button{
+    width:60px;
+    height:55px;
+    border:none;
+    background:#ffffff;
+    color:#5b21b6;
+    cursor:pointer;
+    transition:.3s;
+    font-size:18px;
+}
+
+.password-box button:hover{
+    background:#ede9fe;
+}
+
+/* Settings */
+
+.setting{
+    margin-bottom:25px;
+}
+
+.setting label{
+    display:block;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.length-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.length-box input{
+    flex:1;
+    cursor:pointer;
+}
+
+.length-box span{
+    width:40px;
+    text-align:center;
+    background:#fff;
+    color:#5b21b6;
+    padding:6px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/* Options */
+
+.options{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.options input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    accent-color:#fff;
+    cursor:pointer;
+}
+
+/* Strength */
+
+.strength{
+    margin-bottom:25px;
+}
+
+.strength span{
+    display:block;
+    margin-bottom:10px;
+}
+
+.strength-bar{
+    width:100%;
+    height:10px;
+    background:rgba(255,255,255,.15);
+    border-radius:50px;
+    overflow:hidden;
+}
+
+#strengthIndicator{
+    width:50%;
+    height:100%;
+    background:#facc15;
+    border-radius:50px;
+    transition:.4s;
+}
+
+#strengthText{
+    margin-top:10px;
+    font-weight:500;
+}
+
+/* Generate Button */
+
+#generateBtn{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+    color:#5b21b6;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#generateBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+#generateBtn i{
+    margin-right:8px;
+}
+
+/* Slider */
+
+input[type="range"]{
+    appearance:none;
+    height:6px;
+    border-radius:10px;
+    background:rgba(255,255,255,.3);
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance:none;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+}
+
+input[type="range"]::-moz-range-thumb{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    border:none;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .container{
+        padding:22px;
+    }
+
+    .container h1{
+        font-size:1.6rem;
+    }
+
+    .password-box input{
+        font-size:14px;
+    }
+
+    .options label{
+        font-size:14px;
+    }
+
 }
