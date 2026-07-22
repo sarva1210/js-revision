@@ -89,7 +89,6 @@ function generatePassword() {
 
 // Update strength
 function updateStrength(pass) {
-
     let score = 0;
 
     if (pass.length >= 8) score++;
@@ -233,7 +232,6 @@ function renderHistory() {
         historyList.appendChild(li);
 
     });
-
 }
 
 // Clear history
@@ -246,7 +244,6 @@ clearHistoryBtn.addEventListener("click", () => {
     renderHistory();
 
     showToast("History Cleared!");
-
 });
 
 // Generate button
