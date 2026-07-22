@@ -5,104 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
+<main class="container">
+    <!-- Left Panel -->
+    <section class="left-panel">
 
-        <h1>Password Generator</h1>
+        <h1><i class="fa-solid fa-skull"></i>Password Generator</h1>
 
-        <!-- Generated Password -->
         <div class="password-box">
-            <input 
-            type="password"
-            id="password"
-            placeholder="Your password..."
-            readonly
-        >
-        
-            <button id="toggleBtn">
-                <i class="fa-regular fa-eye"></i>
-            </button>
-
-            <button id="copyBtn">
-                <i class="fa-regular fa-copy"></i>
-            </button>
+            <input type="password" id="password" placeholder="Generate Password" readonly>
+            <button id="toggleBtn" title="Show Password"><i class="fa-regular fa-eye"></i></button>
+            <button id="copyBtn" title="Copy Password"><i class="fa-regular fa-copy"></i></button>
         </div>
 
-        <!-- Password Length -->
         <div class="setting">
-            <label for="length">
-                Password Length
-            </label>
 
-            <div class="length-box">
-                <input
-                    type="range"
-                    id="length"
-                    min="4"
-                    max="32"
-                    value="12"
-                >
-
-                <span id="lengthValue">12</span>
+            <div class="setting-header">
+                <label for="length">Password Length</label>
+                <span id="lengthValue">16</span>
             </div>
+
+            <input type="range" id="length" min="4" max="32" value="16">
+
         </div>
 
-        <!-- Options -->
         <div class="options">
 
-            <label>
+            <label class="option-card">
                 <input type="checkbox" id="uppercase" checked>
-                Uppercase Letters (A-Z)
+                <div>
+                    <h4>Uppercase Letters</h4>
+                    <p>A-Z</p>
+                </div>
             </label>
 
-            <label>
+            <label class="option-card">
                 <input type="checkbox" id="lowercase" checked>
-                Lowercase Letters (a-z)
+                <div>
+                    <h4>Lowercase Letters</h4>
+                    <p>a-z</p>
+                </div>
             </label>
 
-            <label>
+            <label class="option-card">
                 <input type="checkbox" id="numbers" checked>
-                Numbers (0-9)
+                <div>
+                    <h4>Numbers</h4>
+                    <p>0-9</p>
+                </div>
             </label>
 
-            <label>
+            <label class="option-card">
                 <input type="checkbox" id="symbols">
-                Symbols (!@#$%^&*)
+                <div>
+                    <h4>Symbols</h4>
+                    <p>!@#$%</p>
+                </div>
             </label>
 
         </div>
 
-        <!-- Strength -->
         <div class="strength">
-            <span>Password Strength</span>
-
+            <div class="strength-header">
+                <span>Password Strength</span>
+                <span id="strengthText">Strong</span>
+            </div>
             <div class="strength-bar">
                 <div id="strengthIndicator"></div>
             </div>
-
-            <p id="strengthText">Medium</p>
         </div>
 
-        <!-- Generate Button -->
         <button id="generateBtn">
             <i class="fa-solid fa-bolt"></i>
             Generate Password
         </button>
 
-        <div class="history">
-            <h3>Recent Passwords</h3>
-            <ul id="historyList"></ul>
+        <div class="footer">
+            <div class="line"></div>
+            <i class="fa-solid fa-skull"></i>
+            <div class="line"></div>
         </div>
 
-        <div id="toast">
-            Copied Successfully!
+    </section>
+
+    <!-- Right Panel -->
+    <aside class="right-panel">
+
+        <div class="history-header">
+            <h2>Recent Passwords</h2>
+            <button id="clearHistoryBtn">
+                <i class="fa-solid fa-trash"></i>
+                Clear
+            </button>
         </div>
 
-    </div>
+        <ul id="historyList"></ul>
 
-    <script src="script.js"></script>
+    </aside>
+
+</main>
+
+<div id="toast">Password Copied!</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
