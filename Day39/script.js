@@ -116,11 +116,8 @@ function updateStrength(pass) {
 
 // Copy password
 copyBtn.addEventListener("click", () => {
-
     if (!password.value) return;
-
     navigator.clipboard.writeText(password.value);
-
     showToast("Password Copied!");
 });
 
