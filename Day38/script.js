@@ -69,3 +69,14 @@ function findLongestWord(str) {
 }
 
 console.log(findlongestWord('The quick brown fox jumped over the lazy dog'));
+
+
+// Reverse each word in a string
+function reverseWords(str) {
+    return str
+        .split(" ")
+        .map(word => word.split("").reverse().join(""))
+        .join(" ");
+}
+
+console.log(reverseWords("the quick brown fox jumped over the lazy dog"));
