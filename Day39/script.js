@@ -78,11 +78,8 @@ function generatePassword() {
     }
 
     const finalPassword = shuffle(guaranteed);
-
     password.value = finalPassword;
-
     updateStrength(finalPassword);
-
     saveHistory(finalPassword);
 }
 
