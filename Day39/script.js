@@ -131,7 +131,6 @@ toggleBtn.addEventListener("click", () => {
         password.type = "password";
         toggleBtn.innerHTML = '<i class="fa-regular fa-eye"></i>';
     }
-
 });
 
 // Toast
