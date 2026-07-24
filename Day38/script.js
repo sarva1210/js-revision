@@ -88,3 +88,11 @@ function removeFalsy(arr) {
 }
 
 console.log(removeFalsy([0, 1, false, 2, "", 3, null]));
+
+
+// Remove Spaces from a String
+function removeSpaces(str){
+    return str.replace(/\s/g,"");
+}
+
+console.log(removeSpaces("the quick brown fox jumped over the lazy dog"));
