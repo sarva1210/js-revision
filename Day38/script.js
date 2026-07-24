@@ -96,3 +96,11 @@ function removeSpaces(str){
 }
 
 console.log(removeSpaces("the quick brown fox jumped over the lazy dog"));
+
+
+// Swap Two Variables
+let a = 100;
+let b = 250;
+[a,b] = [b,a];
+
+console.log(a,b);
