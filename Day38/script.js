@@ -54,3 +54,18 @@ function sortArray(arr) {
 }
 
 console.log(sortArray([5, 3, 12, 21, 46, 8, 1, 45, 2]));
+
+
+// Find the Longest Word
+function findLongestWord(str) {
+    let words = str.split(' ');
+    let longestWord = '';
+    for (let i = 0; i< words.length; i++) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];
+        }
+    }
+    return longestWord;
+}
+
+console.log(findlongestWord('The quick brown fox jumped over the lazy dog'));
