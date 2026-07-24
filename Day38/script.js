@@ -80,3 +80,11 @@ function reverseWords(str) {
 }
 
 console.log(reverseWords("the quick brown fox jumped over the lazy dog"));
+
+
+// Remove Falsy Values from an Array
+function removeFalsy(arr) {
+    return arr.filter(Boolean);
+}
+
+console.log(removeFalsy([0, 1, false, 2, "", 3, null]));
