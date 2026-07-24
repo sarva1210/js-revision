@@ -143,7 +143,8 @@ function showToast(message) {
     }, 2000);
 }
 
-// Save history
+
+// Save history in localStorage
 function saveHistory(pass) {
 
     history = history.filter(item => item !== pass);
