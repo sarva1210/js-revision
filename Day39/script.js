@@ -123,7 +123,6 @@ copyBtn.addEventListener("click", () => {
 
 // Show / Hide password
 toggleBtn.addEventListener("click", () => {
-
     if (password.type === "password") {
         password.type = "text";
         toggleBtn.innerHTML = '<i class="fa-regular fa-eye-slash"></i>';
