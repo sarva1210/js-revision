@@ -45,7 +45,6 @@ function shuffle(arr) {
 
 // Generate password
 function generatePassword() {
-
     let chars = "";
     let guaranteed = [];
 
