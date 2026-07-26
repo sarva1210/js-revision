@@ -119,3 +119,17 @@ function lcm(a,b){
 }
 
 console.log(lcm(14,20));
+
+
+// Count Even and Odd Numbers in an Array
+function countEvenOdd(arr){
+    let even = 0;
+    let odd = 0;
+
+    for(let num of arr){
+        num%2===0 ? even++ : odd++;
+    }
+    return {even,odd};
+}
+
+console.log(countEvenOdd([1,2,3,4,5,6]));
