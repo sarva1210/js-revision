@@ -161,4 +161,12 @@ function common(arr1, arr2) {
 console.log(common([1,2,3,4],[3,4,5,6]));
 
 
-// Move Zeros to End
+// Move Zeros to End of Array
+function moveZeros(arr){
+    let result=arr.filter(num=>num!==0);
+    let zeros=arr.filter(num=>num===0);
+
+    return [...result,...zeros];
+}
+
+console.log(moveZeros([1,0,2,0,5,0]));
