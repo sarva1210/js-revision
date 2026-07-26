@@ -159,3 +159,6 @@ function common(arr1, arr2) {
 }
 
 console.log(common([1,2,3,4],[3,4,5,6]));
+
+
+// Move Zeros to End
