@@ -104,3 +104,18 @@ let b = 250;
 [a,b] = [b,a];
 
 console.log(a,b);
+
+
+// find lcm of two numbers
+function gd(a,b){
+    while(b){
+        [a,b]=[b,a%b];
+    }
+    return a;
+}
+
+function lcm(a,b){
+    return (a*b)/gd(a,b);
+}
+
+console.log(lcm(14,20));
