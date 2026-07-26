@@ -133,3 +133,21 @@ function countEvenOdd(arr){
 }
 
 console.log(countEvenOdd([1,2,3,4,5,6]));
+
+
+// bubble sort
+function bubbleSort(arr){
+    for(let i=0;i<arr.length;i++){
+
+        for(let j=0;j<arr.length-i-1;j++){
+
+            if(arr[j]>arr[j+1]){
+
+                [arr[j],arr[j+1]]=[arr[j+1],arr[j]];
+            }
+        }
+    }
+    return arr;
+}
+
+console.log(bubbleSort([7,3,1,9,5]));
