@@ -224,3 +224,6 @@ function mergeSorted(arr1, arr2) {
 }
 
 console.log(mergeSorted([1,3,5],[2,4,6]));
+
+
+// Maximum Product of Two Numbers
