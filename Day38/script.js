@@ -188,3 +188,20 @@ function secondSmallest(arr){
 }
 
 console.log(secondSmallest([5,9,3,7,8,9,10]));
+
+
+// Find All Pairs with Given Sum
+function findPairs(arr, target) {
+    let set = new Set();
+
+    for (let num of arr) {
+        let diff = target - num;
+
+        if (set.has(diff)) {
+            console.log(diff, num);
+        }
+        set.add(num);
+    }
+}
+
+findPairs([2,4,3,5,7,8], 10);
