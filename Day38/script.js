@@ -170,3 +170,12 @@ function moveZeros(arr){
 }
 
 console.log(moveZeros([1,0,2,0,5,0]));
+
+
+// Find the Third Largest Element
+function thirdLargest(arr) {
+    let unique = [...new Set(arr)].sort((a, b) => b - a);
+    return unique[2];
+}
+
+console.log(thirdLargest([5,9,3,7,8,9,10]));
