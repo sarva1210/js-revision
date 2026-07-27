@@ -205,3 +205,6 @@ function findPairs(arr, target) {
 }
 
 findPairs([2,4,3,5,7,8], 10);
+
+
+// Merge Two Sorted Arrays
