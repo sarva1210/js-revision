@@ -179,3 +179,12 @@ function thirdLargest(arr) {
 }
 
 console.log(thirdLargest([5,9,3,7,8,9,10]));
+
+
+// find the 2nd smallest element in an array
+function secondSmallest(arr){
+    let unique = [...new Set(arr)].sort((c,d)=>c-d)
+    return unique[1];
+}
+
+console.log(secondSmallest([5,9,3,7,8,9,10]));
