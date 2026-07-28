@@ -233,3 +233,6 @@ function maxProduct(arr) {
 }
 
 console.log(maxProduct([3, 5, 2, 8, 7]));
+
+
+// Check if Two Arrays are Equal
