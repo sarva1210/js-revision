@@ -251,3 +251,6 @@ function arraysEqual(arr1, arr2) {
 }
 
 console.log(arraysEqual([1,2,3],[3,2,1]));
+
+
+// Minimum Product of Two Numbers
