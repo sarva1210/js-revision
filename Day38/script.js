@@ -256,9 +256,7 @@ console.log(arraysEqual([1,2,3],[3,2,1]));
 // Minimum Product of Two Numbers
 function minProduct(arr){
     arr.sort((g, h) => g - h );
-
     const n = arr.length;
-
     return arr[0] * arr[n-1];
 }
 
