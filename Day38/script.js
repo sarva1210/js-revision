@@ -261,3 +261,6 @@ function minProduct(arr){
 }
 
 console.log(minProduct([3, 5, 2, 8, 7]));
+
+
+// find the largest element in array
