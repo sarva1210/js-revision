@@ -274,7 +274,6 @@ function findLargest(arr) {
             largest = arr[i];
         }
     }
-
     return largest;
 }
 
