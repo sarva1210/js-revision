@@ -44,6 +44,7 @@ body{
     box-shadow:var(--shadow);
 }
 
+/* left pannel */
 .left-panel{
     padding:35px;
     display:flex;
@@ -140,6 +141,7 @@ body{
     margin-top:4px;
 }
 
+/* right panel */
 .right-panel{
     padding:35px;
     display:flex;
