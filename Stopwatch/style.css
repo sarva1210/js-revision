@@ -320,8 +320,8 @@ body{
     transform:translateX(5px);
 }
 
-/* Toast */
 
+/* Toast */
 .toast{
     position:fixed;
     top:30px;
@@ -364,8 +364,8 @@ body{
     background:var(--secondary);
 }
 
-/* Animations */
 
+/* Animations */
 @keyframes fadeUp{
 
     from{
@@ -379,6 +379,7 @@ body{
     }
 
 }
+
 
 .display-box,
 .laps-section,
