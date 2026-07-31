@@ -450,6 +450,7 @@ body{
 
 }
 
+
 @media(max-width:768px){
 
     body{
@@ -483,7 +484,6 @@ body{
         height:60px;
         font-size:1.3rem;
     }
-
 }
 
 
