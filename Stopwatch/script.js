@@ -45,7 +45,6 @@ function updateDisplay(){
 
 // Show toast
 function showToast(message){
-
     toast.textContent=message;
 
     toast.classList.add("show");
@@ -55,12 +54,10 @@ function showToast(message){
         toast.classList.remove("show");
 
     },2000);
-
 }
 
 // Stopwatch mode
 stopwatchMode.addEventListener("click",()=>{
-
     stopwatch=true;
 
     stopwatchMode.classList.add("active");
@@ -76,7 +73,6 @@ stopwatchMode.addEventListener("click",()=>{
     lapBtn.style.display="flex";
 
     reset();
-
 });
 
 // Timer mode
