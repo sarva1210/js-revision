@@ -77,7 +77,6 @@ stopwatchMode.addEventListener("click",()=>{
 
 // Timer mode
 timerMode.addEventListener("click",()=>{
-
     stopwatch=false;
 
     timerMode.classList.add("active");
@@ -93,12 +92,10 @@ timerMode.addEventListener("click",()=>{
     lapBtn.style.display="none";
 
     reset();
-
 });
 
 // Reset values
 function reset(){
-
     clearInterval(interval);
 
     running=false;
@@ -108,7 +105,6 @@ function reset(){
     totalSeconds=0;
 
     updateDisplay();
-
 }
 
 // Initial display
