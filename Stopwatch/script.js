@@ -134,6 +134,19 @@ function start(){
         totalMilliseconds=totalSeconds*1000;
         updateDisplay();
 
+
+        interval=setInterval(()=>{
+            totalSeconds--;
+            totalMilliseconds=totalSeconds*1000;
+
+            updateDisplay();
+            if(totalSeconds<=0){
+                clearInterval(interval);
+                running=false;
+                showToast("Time's Up!");
+            }
+        },1000);
+
     }
 
 }
