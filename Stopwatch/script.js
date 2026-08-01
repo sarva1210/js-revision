@@ -108,3 +108,32 @@ function reset(){
 
 // Initial display
 updateDisplay();
+
+// Start
+function start(){
+    if(running) return;
+    running=true;
+
+    if(stopwatch){
+        interval=setInterval(()=>{
+            totalMilliseconds+=1000;
+            updateDisplay();
+        },1000);
+    }else{
+
+        totalSeconds=
+        Number(hours.value||0)*3600+
+        Number(minutes.value||0)*60+
+        Number(seconds.value||0);
+
+        if(totalSeconds<=0){
+            showToast("Enter a valid time");
+            running=false;
+            return;
+        }
+        totalMilliseconds=totalSeconds*1000;
+        updateDisplay();
+
+    }
+
+}
