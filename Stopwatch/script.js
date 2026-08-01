@@ -46,7 +46,6 @@ function updateDisplay(){
 // Show toast
 function showToast(message){
     toast.textContent=message;
-
     toast.classList.add("show");
 
     setTimeout(()=>{
