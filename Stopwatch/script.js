@@ -29,7 +29,6 @@ let fastest=null;
 
 // Format time
 function formatTime(ms){
-
     const hrs=Math.floor(ms/3600000);
 
     const mins=Math.floor((ms%3600000)/60000);
@@ -37,14 +36,11 @@ function formatTime(ms){
     const secs=Math.floor((ms%60000)/1000);
 
     return`${String(hrs).padStart(2,"0")}:${String(mins).padStart(2,"0")}:${String(secs).padStart(2,"0")}`;
-
 }
 
 // Update display
 function updateDisplay(){
-
     display.textContent=formatTime(totalMilliseconds);
-
 }
 
 // Show toast
