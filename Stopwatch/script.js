@@ -146,7 +146,5 @@ function start(){
                 showToast("Time's Up!");
             }
         },1000);
-
     }
-
 }
