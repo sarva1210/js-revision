@@ -148,3 +148,10 @@ function start(){
         },1000);
     }
 }
+
+
+// Pause
+function pause(){
+    clearInterval(interval);
+    running=false;
+}
