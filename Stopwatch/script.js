@@ -155,3 +155,15 @@ function pause(){
     clearInterval(interval);
     running=false;
 }
+
+// Reset
+function reset(){
+    clearInterval(interval);
+    running=false;
+
+    totalMilliseconds=0;
+
+    totalSeconds=0;
+
+    updateDisplay();
+}
