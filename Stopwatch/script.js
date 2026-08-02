@@ -162,8 +162,11 @@ function reset(){
     running=false;
 
     totalMilliseconds=0;
-
     totalSeconds=0;
+
+    hours.value="";
+    minutes.value="";
+    seconds.value="";
 
     updateDisplay();
 }
