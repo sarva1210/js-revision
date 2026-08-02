@@ -109,6 +109,7 @@ function reset(){
 // Initial display
 updateDisplay();
 
+
 // Start
 function start(){
     if(running) return;
