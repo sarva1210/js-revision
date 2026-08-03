@@ -177,3 +177,6 @@ startBtn.addEventListener("click",start);
 
 // Pause button
 pauseBtn.addEventListener("click",pause);
+
+// Reset button
+resetBtn.addEventListener("click",reset);
