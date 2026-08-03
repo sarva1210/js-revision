@@ -174,3 +174,6 @@ function reset(){
 
 // Start button
 startBtn.addEventListener("click",start);
+
+// Pause button
+pauseBtn.addEventListener("click",pause);
