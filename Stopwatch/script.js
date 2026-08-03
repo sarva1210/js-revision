@@ -96,11 +96,9 @@ timerMode.addEventListener("click",()=>{
 // Reset values
 function reset(){
     clearInterval(interval);
-
     running=false;
 
     totalMilliseconds=0;
-
     totalSeconds=0;
 
     updateDisplay();
