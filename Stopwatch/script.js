@@ -18,6 +18,7 @@ const fastestLap=document.getElementById("fastestLap");
 const currentMode=document.getElementById("currentMode");
 const toast=document.getElementById("toast");
 
+
 // Variables
 let stopwatch=true;
 let running=false;
@@ -26,6 +27,7 @@ let totalMilliseconds=0;
 let totalSeconds=0;
 let lapCounter=0;
 let fastest=null;
+
 
 // Format time
 function formatTime(ms){
