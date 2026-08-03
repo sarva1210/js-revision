@@ -171,3 +171,6 @@ function reset(){
 
     updateDisplay();
 }
+
+// Start button
+startBtn.addEventListener("click",start);
