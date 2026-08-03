@@ -58,15 +58,12 @@ stopwatchMode.addEventListener("click",()=>{
     stopwatch=true;
 
     stopwatchMode.classList.add("active");
-
     timerMode.classList.remove("active");
 
     modeTitle.textContent="Stopwatch";
-
     currentMode.textContent="Stopwatch";
 
     timerInput.style.display="none";
-
     lapBtn.style.display="flex";
 
     reset();
