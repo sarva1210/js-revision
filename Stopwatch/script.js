@@ -74,15 +74,12 @@ timerMode.addEventListener("click",()=>{
     stopwatch=false;
 
     timerMode.classList.add("active");
-
     stopwatchMode.classList.remove("active");
 
     modeTitle.textContent="Countdown Timer";
-
     currentMode.textContent="Timer";
 
     timerInput.style.display="flex";
-
     lapBtn.style.display="none";
 
     reset();
