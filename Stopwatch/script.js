@@ -53,6 +53,7 @@ function showToast(message){
     },2000);
 }
 
+
 // Stopwatch mode
 stopwatchMode.addEventListener("click",()=>{
     stopwatch=true;
@@ -84,6 +85,7 @@ timerMode.addEventListener("click",()=>{
 
     reset();
 });
+
 
 // Reset values
 function reset(){
@@ -161,6 +163,7 @@ function reset(){
 
     updateDisplay();
 }
+
 
 // Start button
 startBtn.addEventListener("click",start);
