@@ -188,5 +188,13 @@ function addLap(){
         fastest=totalMilliseconds;
         fastestLap.textContent=lapTime;
     }
+    const li=document.createElement("li");
+
+    li.innerHTML=`
+        <span>Lap ${lapCounter}</span>
+        <strong>${lapTime}</strong>
+    `;
+
+    lapList.prepend(li);
     saveLaps();
 }
