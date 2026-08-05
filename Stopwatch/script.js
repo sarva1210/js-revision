@@ -199,6 +199,7 @@ function addLap(){
     saveLaps();
 }
 
+
 // Clear laps
 function clearLapHistory(){
     lapList.innerHTML="";
