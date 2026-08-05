@@ -181,5 +181,12 @@ function addLap(){
     lapCounter++;
 
     lapCount.textContent=lapCounter;
+
+    const lapTime=formatTime(totalMilliseconds);
+
+    if(!fastest||totalMilliseconds<fastest){
+        fastest=totalMilliseconds;
+        fastestLap.textContent=lapTime;
+    }
     saveLaps();
 }
