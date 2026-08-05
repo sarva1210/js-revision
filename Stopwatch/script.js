@@ -173,3 +173,13 @@ pauseBtn.addEventListener("click",pause);
 
 // Reset button
 resetBtn.addEventListener("click",reset);
+
+
+// Add lap
+function addLap(){
+    if(!stopwatch||!running) return;
+    lapCounter++;
+
+    lapCount.textContent=lapCounter;
+    saveLaps();
+}
