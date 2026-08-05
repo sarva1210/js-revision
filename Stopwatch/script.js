@@ -198,3 +198,5 @@ function addLap(){
     lapList.prepend(li);
     saveLaps();
 }
+
+// Clear laps
