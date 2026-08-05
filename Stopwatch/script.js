@@ -208,4 +208,6 @@ function clearLapHistory(){
 
     lapCount.textContent="0";
     fastestLap.textContent="--:--";
+
+    localStorage.removeItem("laps");
 }
