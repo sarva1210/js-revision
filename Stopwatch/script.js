@@ -202,6 +202,10 @@ function addLap(){
 // Clear laps
 function clearLapHistory(){
     lapList.innerHTML="";
-
     lapCounter=0;
+
+    fastest=null;
+
+    lapCount.textContent="0";
+    fastestLap.textContent="--:--";
 }
