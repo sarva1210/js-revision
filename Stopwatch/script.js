@@ -200,3 +200,8 @@ function addLap(){
 }
 
 // Clear laps
+function clearLapHistory(){
+    lapList.innerHTML="";
+
+    lapCounter=0;
+}
