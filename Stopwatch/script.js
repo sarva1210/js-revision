@@ -221,4 +221,10 @@ function saveLaps(){
 // Load laps
 function loadLaps(){
     const saved=localStorage.getItem("laps");
+
+    if(saved){
+        lapList.innerHTML=saved;
+        lapCounter=lapList.children.length;
+        lapCount.textContent=lapCounter;
+    }
 }
