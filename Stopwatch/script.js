@@ -217,3 +217,8 @@ function clearLapHistory(){
 function saveLaps(){
     localStorage.setItem("laps",lapList.innerHTML);
 }
+
+// Load laps
+function loadLaps(){
+    const saved=localStorage.getItem("laps");
+}
