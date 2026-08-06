@@ -228,3 +228,6 @@ function loadLaps(){
         lapCount.textContent=lapCounter;
     }
 }
+
+// Clear button
+clearLaps.addEventListener("click",clearLapHistory);
