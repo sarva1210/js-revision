@@ -212,3 +212,5 @@ function clearLapHistory(){
 
     localStorage.removeItem("laps");
 }
+
+// Save laps
