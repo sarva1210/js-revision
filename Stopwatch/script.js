@@ -255,3 +255,6 @@ document.addEventListener("keydown",e=>{
 
 // Load data
 loadLaps();
+
+// Initial display
+updateDisplay();
