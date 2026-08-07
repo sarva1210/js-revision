@@ -243,4 +243,8 @@ document.addEventListener("keydown",e=>{
         running?pause():start();
     }
     
+    if(e.key==="r"||e.key==="R"){
+        reset();
+    }
+
 });
