@@ -234,3 +234,5 @@ clearLaps.addEventListener("click",clearLapHistory);
 
 // Lap button
 lapBtn.addEventListener("click",addLap);
+
+// Keyboard shortcuts
