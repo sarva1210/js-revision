@@ -236,3 +236,11 @@ clearLaps.addEventListener("click",clearLapHistory);
 lapBtn.addEventListener("click",addLap);
 
 // Keyboard shortcuts
+document.addEventListener("keydown",e=>{
+
+    if(e.code==="Space"){
+        e.preventDefault();
+        running?pause():start();
+    }
+    
+});
