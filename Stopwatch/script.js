@@ -231,3 +231,6 @@ function loadLaps(){
 
 // Clear button
 clearLaps.addEventListener("click",clearLapHistory);
+
+// Lap button
+lapBtn.addEventListener("click",addLap);
