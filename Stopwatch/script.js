@@ -252,3 +252,6 @@ document.addEventListener("keydown",e=>{
     }
 
 });
+
+// Load data
+loadLaps();
