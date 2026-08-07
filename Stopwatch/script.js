@@ -247,4 +247,8 @@ document.addEventListener("keydown",e=>{
         reset();
     }
 
+    if(e.key==="l"||e.key==="L"){
+        addLap();
+    }
+
 });
