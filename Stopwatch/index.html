@@ -38,6 +38,116 @@
             </div>
         </header>
 
+        <section class="timer-section">
+
+            <div class="greeting">
+                <p id="currentDate">Friday, August 8</p>
+                <h1 id="greetingText">Good Evening</h1>
+            </div>
+
+
+            <nav class="mode-switch">
+
+                <button class="mode-btn active" data-mode="pomodoro">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    Pomodoro
+                </button>
+
+                <button class="mode-btn" data-mode="stopwatch">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    Stopwatch
+                </button>
+
+                <button class="mode-btn" data-mode="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    Timer
+                </button>
+
+            </nav>
+
+
+            <div class="timer-wrapper">
+
+                <div class="timer-display" id="timerDisplay">
+                    25:00
+                </div>
+
+                <div class="timer-label" id="timerLabel">
+                    Focus Session
+                </div>
+
+            </div>
+
+
+            <div class="timer-inputs" id="timerInputs">
+                <input
+                    type="number"
+                    id="timerHours"
+                    min="0"
+                    max="99"
+                    placeholder="00"
+                >
+
+                <span>:</span>
+
+                <input
+                    type="number"
+                    id="timerMinutes"
+                    min="0"
+                    max="59"
+                    placeholder="00"
+                >
+
+                <span>:</span>
+
+                <input
+                    type="number"
+                    id="timerSeconds"
+                    min="0"
+                    max="59"
+                    placeholder="00"
+                >
+            </div>
+
+
+            <div class="timer-controls">
+
+                <button id="resetBtn" title="Reset">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+
+                <button id="startBtn" class="play-btn" title="Start">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button id="pauseBtn" title="Pause">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+
+            </div>
+
+            
+            <div class="pomodoro-controls" id="pomodoroControls">
+
+                <button class="pomo-btn active" data-duration="25">
+                    Focus
+                    <span>25m</span>
+                </button>
+
+                <button class="pomo-btn" data-duration="5">
+                    Short Break
+                    <span>5m</span>
+                </button>
+
+                <button class="pomo-btn" data-duration="15">
+                    Long Break
+                    <span>15m</span>
+                </button>
+
+            </div>
+
+        </section>
+
     <script src="script.js"></script>
 
 </body>
