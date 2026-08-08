@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    
+    <div class="background-overlay"></div>
+
+    <main class="app">
+        <header class="top-bar">
+
+            <div class="brand">
+                <i class="fa-solid fa-clock"></i>
+                <span>FocusFlow</span>
+            </div>
+
+            <div class="top-actions">
+
+                <button id="backgroundBtn" title="Change Background">
+                    <i class="fa-solid fa-image"></i>
+                </button>
+
+                <button id="settingsBtn" title="Settings">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+
+                <button id="fullscreenBtn" title="Fullscreen">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+        </header>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
