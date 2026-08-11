@@ -78,3 +78,66 @@ button{
     align-items:center;
     justify-content:space-between;
 }
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.05rem;
+    font-weight:500;
+    letter-spacing:.3px;
+}
+
+.brand i{
+    color:var(--accent);
+}
+
+.top-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.top-actions button{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid var(--border);
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:var(--text);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.top-actions button:hover{
+    background:rgba(255,255,255,.16);
+    color:var(--accent);
+    transform:translateY(-2px);
+}
+
+.timer-section{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.greeting{
+    margin-bottom:20px;
+}
+
+.greeting p{
+    margin-bottom:3px;
+    color:var(--text-light);
+    font-size:.82rem;
+}
+
+.greeting h1{
+    font-size:1.45rem;
+    font-weight:500;
+    letter-spacing:.2px;
+}
