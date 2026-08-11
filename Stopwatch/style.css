@@ -37,3 +37,44 @@ body{
     color:var(--text);
     background:url("assets/backgrounds/fuji.jpg") center/cover no-repeat fixed;
 }
+
+button, input{
+    font:inherit;
+}
+
+button{
+    border:none;
+    outline:none;
+}
+
+.background-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(8,15,23,.38);
+    backdrop-filter:blur(1px);
+    z-index:0;
+    pointer-events:none;
+}
+
+.app{
+    position:relative;
+    z-index:1;
+    width:min(1100px,100%);
+    min-height:650px;
+    padding:28px 38px 32px;
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:rgba(20,28,36,.38);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    box-shadow:var(--shadow);
+}
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
