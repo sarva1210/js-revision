@@ -294,3 +294,22 @@ button{
     cursor:pointer;
     transition:.3s;
 }
+
+
+.pomo-btn span{
+    font-size:.68rem;
+    color:var(--muted);
+}
+
+.pomo-btn:hover{
+    background:rgba(255,255,255,.14);
+}
+
+.pomo-btn.active{
+    background:var(--white);
+    color:#263442;
+}
+
+.pomo-btn.active span{
+    color:#778ca4;
+}
