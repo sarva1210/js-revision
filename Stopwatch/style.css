@@ -363,3 +363,22 @@ button{
     font-size:.85rem;
     font-weight:500;
 }
+
+
+#soundPlayBtn{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--accent);
+    color:#263442;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#soundPlayBtn:hover{
+    transform:scale(1.06);
+    box-shadow:0 8px 20px rgba(183,209,234,.2);
+}
