@@ -411,3 +411,14 @@ button{
 .sound-btn span{
     font-size:.65rem;
 }
+
+.sound-btn:hover{
+    background:rgba(255,255,255,.11);
+    color:var(--white);
+}
+
+.sound-btn.active{
+    border-color:rgba(183,209,234,.35);
+    background:rgba(183,209,234,.14);
+    color:var(--accent);
+}
