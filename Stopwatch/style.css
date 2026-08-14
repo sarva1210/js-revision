@@ -382,3 +382,10 @@ button{
     transform:scale(1.06);
     box-shadow:0 8px 20px rgba(183,209,234,.2);
 }
+
+
+.sound-options{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:8px;
+}
