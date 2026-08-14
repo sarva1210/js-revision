@@ -313,3 +313,37 @@ button{
 .pomo-btn.active span{
     color:#778ca4;
 }
+
+.ambient-player{
+    width:min(650px,100%);
+    margin:0 auto;
+    padding:18px 20px;
+    border:1px solid var(--border);
+    border-radius:20px;
+    background:rgba(10,18,26,.42);
+    backdrop-filter:blur(15px);
+}
+
+.ambient-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:16px;
+}
+
+.ambient-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.ambient-title>i{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    background:rgba(183,209,234,.16);
+    color:var(--accent);
+}
