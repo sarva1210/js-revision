@@ -422,3 +422,21 @@ button{
     background:rgba(183,209,234,.14);
     color:var(--accent);
 }
+
+.volume-control{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:14px;
+    color:var(--muted);
+    font-size:.75rem;
+}
+
+#volumeSlider{
+    flex:1;
+    height:4px;
+    appearance:none;
+    border-radius:20px;
+    background:rgba(255,255,255,.2);
+    cursor:pointer;
+}
