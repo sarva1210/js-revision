@@ -456,3 +456,26 @@ button{
     border-radius:50%;
     background:var(--accent);
 }
+
+.background-menu,
+.settings-menu{
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:10;
+    width:420px;
+    max-width:calc(100% - 30px);
+    max-height:80vh;
+    padding:22px;
+    overflow-y:auto;
+    border:1px solid var(--border);
+    border-radius:22px;
+    background:rgba(17,25,33,.88);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+    box-shadow:0 25px 70px rgba(0,0,0,.5);
+    transform:translate(-50%,-45%) scale(.95);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
