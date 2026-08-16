@@ -510,3 +510,20 @@ button{
     color:var(--text-light);
     cursor:pointer;
 }
+
+.background-options{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.background-option{
+    position:relative;
+    height:115px;
+    overflow:hidden;
+    padding:0;
+    border:2px solid transparent;
+    border-radius:15px;
+    background:#222;
+    cursor:pointer;
+}
