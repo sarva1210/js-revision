@@ -493,3 +493,8 @@ button{
     justify-content:space-between;
     margin-bottom:18px;
 }
+
+.menu-header h3{
+    font-size:1rem;
+    font-weight:500;
+}
