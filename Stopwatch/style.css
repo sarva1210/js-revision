@@ -565,3 +565,19 @@ button{
 .setting-item:last-child{
     border-bottom:none;
 }
+
+.setting-item div{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+}
+
+.setting-item strong{
+    font-size:.8rem;
+    font-weight:500;
+}
+
+.setting-item span{
+    color:var(--muted);
+    font-size:.68rem;
+}
