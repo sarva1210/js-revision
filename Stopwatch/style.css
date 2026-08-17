@@ -581,3 +581,11 @@ button{
     color:var(--muted);
     font-size:.68rem;
 }
+
+
+.switch{
+    position:relative;
+    width:42px;
+    height:23px;
+    flex-shrink:0;
+}
