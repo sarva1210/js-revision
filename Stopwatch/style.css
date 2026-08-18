@@ -618,3 +618,7 @@ button{
 .switch input:checked+span{
     background:var(--accent-dark);
 }
+
+.switch input:checked+span::before{
+    transform:translateX(19px);
+}
