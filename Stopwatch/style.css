@@ -602,3 +602,19 @@ button{
     cursor:pointer;
     transition:.3s;
 }
+
+.switch span::before{
+    content:"";
+    position:absolute;
+    width:17px;
+    height:17px;
+    left:3px;
+    top:3px;
+    border-radius:50%;
+    background:var(--white);
+    transition:.3s;
+}
+
+.switch input:checked+span{
+    background:var(--accent-dark);
+}
