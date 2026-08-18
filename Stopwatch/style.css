@@ -639,3 +639,10 @@ button{
     visibility:hidden;
     transition:.3s;
 }
+
+.toast.show{
+    transform:translate(-50%,0);
+    opacity:1;
+    visibility:visible;
+}
+
