@@ -765,3 +765,33 @@ button{
     }
 
 }
+
+@media(max-width:400px){
+
+    .app{
+        padding:15px;
+    }
+
+    .timer-display{
+        font-size:4.2rem;
+    }
+
+    .timer-controls button{
+        width:43px;
+        height:43px;
+    }
+
+    .timer-controls .play-btn{
+        width:55px;
+        height:55px;
+    }
+
+    .sound-options{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .background-options{
+        grid-template-columns:1fr;
+    }
+
+}
