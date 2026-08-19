@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
     <div class="background-overlay"></div>
 
     <main class="app">
+
         <header class="top-bar">
 
             <div class="brand">
@@ -36,6 +38,7 @@
                 </button>
 
             </div>
+
         </header>
 
         <section class="timer-section">
@@ -44,7 +47,6 @@
                 <p id="currentDate">Friday, August 8</p>
                 <h1 id="greetingText">Good Evening</h1>
             </div>
-
 
             <nav class="mode-switch">
 
@@ -65,7 +67,6 @@
 
             </nav>
 
-
             <div class="timer-wrapper">
 
                 <div class="timer-display" id="timerDisplay">
@@ -78,8 +79,8 @@
 
             </div>
 
-
             <div class="timer-inputs" id="timerInputs">
+
                 <input
                     type="number"
                     id="timerHours"
@@ -107,8 +108,8 @@
                     max="59"
                     placeholder="00"
                 >
-            </div>
 
+            </div>
 
             <div class="timer-controls">
 
@@ -126,7 +127,6 @@
 
             </div>
 
-            
             <div class="pomodoro-controls" id="pomodoroControls">
 
                 <button class="pomo-btn active" data-duration="25">
@@ -143,6 +143,36 @@
                     Long Break
                     <span>15m</span>
                 </button>
+
+            </div>
+
+        </section>
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <div>
+                    <span>Today's Sessions</span>
+                    <h3 data-stat="sessions">0/8</h3>
+                </div>
+
+            </div>
+
+            <div class="goal-card">
+
+                <div class="goal-header">
+                    <span>Daily Goal</span>
+                    <strong>8 Sessions</strong>
+                </div>
+
+                <div class="goal-bar">
+                    <div class="goal-progress"></div>
+                </div>
 
             </div>
 
@@ -168,7 +198,6 @@
                 </button>
 
             </div>
-
 
             <div class="sound-options">
 
@@ -204,7 +233,6 @@
 
             </div>
 
-            
             <div class="volume-control">
 
                 <i class="fa-solid fa-volume-low"></i>
@@ -333,7 +361,10 @@
 
             <label class="switch">
 
-                <input type="checkbox" id="autoStart">
+                <input
+                    type="checkbox"
+                    id="autoStart"
+                >
 
                 <span></span>
 
