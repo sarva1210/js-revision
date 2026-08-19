@@ -735,3 +735,179 @@ button{
     opacity:1;
     visibility:visible;
 }
+
+@media(max-width:900px){
+
+    body{
+        padding:15px;
+        background-attachment:scroll;
+    }
+
+    .app{
+        height:calc(100vh - 30px);
+        min-height:600px;
+        padding:20px 25px;
+    }
+
+    .timer-display{
+        font-size:clamp(5rem,14vw,7rem);
+    }
+
+}
+
+@media(max-width:650px){
+
+    body{
+        padding:10px;
+        align-items:flex-start;
+    }
+
+    .app{
+        width:100%;
+        height:auto;
+        min-height:calc(100vh - 20px);
+        max-height:none;
+        padding:18px;
+        overflow:visible;
+        border-radius:20px;
+    }
+
+    .brand{
+        font-size:.85rem;
+    }
+
+    .top-actions button{
+        width:33px;
+        height:33px;
+        font-size:.7rem;
+    }
+
+    .timer-section{
+        flex:none;
+        padding:10px 0;
+    }
+
+    .greeting{
+        margin-bottom:14px;
+    }
+
+    .greeting h1{
+        font-size:1.15rem;
+    }
+
+    .mode-switch{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .mode-btn{
+        flex:1;
+        padding:8px 5px;
+        font-size:.62rem;
+    }
+
+    .mode-btn i{
+        display:none;
+    }
+
+    .timer-display{
+        font-size:clamp(4.3rem,19vw,6rem);
+        letter-spacing:-3px;
+    }
+
+    .timer-controls{
+        margin-top:18px;
+    }
+
+    .pomodoro-controls{
+        width:100%;
+        gap:5px;
+    }
+
+    .pomo-btn{
+        flex:1;
+        min-width:0;
+        padding:7px 4px;
+        font-size:.58rem;
+    }
+
+    .stats-section{
+        grid-template-columns:repeat(3,1fr);
+        gap:6px;
+    }
+
+    .stat-card{
+        padding:8px;
+        gap:6px;
+        min-height:52px;
+    }
+
+    .stat-icon{
+        width:27px;
+        height:27px;
+        font-size:.65rem;
+    }
+
+    .stat-card span{
+        font-size:.48rem;
+    }
+
+    .stat-card h3{
+        font-size:.68rem;
+    }
+
+    .goal-card{
+        padding:8px 10px;
+    }
+
+    .ambient-player{
+        width:100%;
+    }
+
+    .sound-options{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:400px){
+
+    .app{
+        padding:15px;
+    }
+
+    .timer-display{
+        font-size:4rem;
+    }
+
+    .timer-controls button{
+        width:40px;
+        height:40px;
+    }
+
+    .timer-controls .play-btn{
+        width:52px;
+        height:52px;
+    }
+
+    .stats-section{
+        grid-template-columns:1fr;
+    }
+
+    .stat-card{
+        min-height:45px;
+    }
+
+    .goal-card{
+        grid-column:auto;
+    }
+
+    .sound-options{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .background-options{
+        grid-template-columns:1fr;
+    }
+
+}
