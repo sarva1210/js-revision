@@ -403,3 +403,145 @@ button{
 }
 
 .ambient-player{
+        flex-shrink:0;
+    width:min(760px,100%);
+    margin:0 auto;
+    padding:12px 15px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    background:rgba(10,18,26,.4);
+    backdrop-filter:blur(15px);
+}
+
+.ambient-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:9px;
+}
+
+.ambient-title{
+    display:flex;
+    align-items:center;
+    gap:9px;
+}
+
+.ambient-title>i{
+    width:31px;
+    height:31px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:9px;
+    background:rgba(183,209,234,.13);
+    color:var(--accent);
+    font-size:.75rem;
+}
+
+.ambient-title div{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.ambient-title span{
+    color:var(--muted);
+    font-size:.55rem;
+}
+
+.ambient-title strong{
+    color:var(--white);
+    font-size:.7rem;
+    font-weight:500;
+}
+
+#soundPlayBtn{
+    width:32px;
+    height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--accent);
+    color:#263442;
+    font-size:.7rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#soundPlayBtn:hover{
+    transform:scale(1.06);
+}
+
+.sound-options{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:6px;
+}
+
+.sound-btn{
+    padding:6px 4px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:3px;
+    border:1px solid transparent;
+    border-radius:9px;
+    background:rgba(255,255,255,.05);
+    color:var(--muted);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sound-btn i{
+    font-size:.7rem;
+}
+
+.sound-btn span{
+    font-size:.53rem;
+}
+
+.sound-btn:hover{
+    background:rgba(255,255,255,.1);
+    color:var(--white);
+}
+
+.sound-btn.active{
+    border-color:rgba(183,209,234,.3);
+    background:rgba(183,209,234,.12);
+    color:var(--accent);
+}
+
+.volume-control{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:8px;
+    color:var(--muted);
+    font-size:.6rem;
+}
+
+#volumeSlider{
+    flex:1;
+    height:3px;
+    appearance:none;
+    border-radius:20px;
+    background:rgba(255,255,255,.2);
+    cursor:pointer;
+}
+
+#volumeSlider::-webkit-slider-thumb{
+    appearance:none;
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background:var(--accent);
+}
+
+#volumeSlider::-moz-range-thumb{
+    width:11px;
+    height:11px;
+    border:none;
+    border-radius:50%;
+    background:var(--accent);
+}
