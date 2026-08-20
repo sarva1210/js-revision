@@ -25,3 +25,7 @@ const closeSettings = document.getElementById("closeSettings");
 const fullscreenBtn = document.getElementById("fullscreenBtn");
 const darkOverlay = document.getElementById("darkOverlay");
 const autoStart = document.getElementById("autoStart");
+const notifications = document.getElementById("notifications");
+const toast = document.getElementById("toast");
+const currentDate = document.getElementById("currentDate");
+const greetingText = document.getElementById("greetingText");
