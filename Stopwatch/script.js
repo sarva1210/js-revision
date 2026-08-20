@@ -38,3 +38,12 @@ let currentPomoDuration = 25;
 let remainingSeconds = 25 * 60;
 let totalSeconds = remainingSeconds;
 let currentSound = "rain";
+
+// Data variables
+let completedSessions = 0;
+let totalFocusMinutes = 0;
+let currentCycle = 0;
+
+// Constants
+const dailyGoal = 8;
+const storageKey = "focusflow-data";
