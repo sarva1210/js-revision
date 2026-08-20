@@ -47,3 +47,21 @@ let currentCycle = 0;
 // Constants
 const dailyGoal = 8;
 const storageKey = "focusflow-data";
+
+const sounds = {
+    rain: "assets/audio/rain.mp3",
+    piano: "assets/audio/piano.mp3",
+    ocean: "assets/audio/ocean.mp3",
+    forest: "assets/audio/forest.mp3",
+    cafe: "assets/audio/cafe.mp3",
+    fireplace: "assets/audio/fireplace.mp3"
+};
+
+const backgrounds = {
+    "fuji.jpg": "assets/backgrounds/fuji.jpg",
+    "meadow.jpg": "assets/backgrounds/meadow.jpg",
+    "rain.jpg": "assets/backgrounds/rain.jpg",
+    "forest.jpg": "assets/backgrounds/forest.jpg",
+    "ocean.jpg": "assets/backgrounds/ocean.jpg",
+    "night.jpg": "assets/backgrounds/night.jpg"
+};
