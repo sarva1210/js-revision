@@ -29,3 +29,12 @@ const notifications = document.getElementById("notifications");
 const toast = document.getElementById("toast");
 const currentDate = document.getElementById("currentDate");
 const greetingText = document.getElementById("greetingText");
+
+// Timer variables
+let timer = null;
+let currentMode = "pomodoro";
+let isRunning = false;
+let currentPomoDuration = 25;
+let remainingSeconds = 25 * 60;
+let totalSeconds = remainingSeconds;
+let currentSound = "rain";
