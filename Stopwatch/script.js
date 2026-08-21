@@ -65,3 +65,7 @@ const backgrounds = {
     "ocean.jpg": "assets/backgrounds/ocean.jpg",
     "night.jpg": "assets/backgrounds/night.jpg"
 };
+
+function getToday(){
+    return new Date().toISOString().split("T")[0];
+}
