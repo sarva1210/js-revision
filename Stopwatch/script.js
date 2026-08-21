@@ -72,6 +72,23 @@ function getToday(){
 
 
 function loadData(){
+    const savedData = JSON.parse(
+        localStorage.getItem(storageKey)
+    );
+
+    if(!savedData){
+        return;
+    }
+
+    if(savedData.date !== getToday()){
+        completedSessions = 0;
+        totalFocusMinutes = 0;
+        currentCycle = 0;
+
+        saveData();
+
+        return;
+    }
 
     completedSessions =
         savedData.completedSessions || 0;
