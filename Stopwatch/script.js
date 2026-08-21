@@ -99,3 +99,15 @@ function loadData(){
     currentCycle =
         savedData.currentCycle || 0;
 }
+
+function saveData(){
+    localStorage.setItem(
+        storageKey,
+        JSON.stringify({
+            date: getToday(),
+            completedSessions,
+            totalFocusMinutes,
+            currentCycle
+        })
+    );
+}
