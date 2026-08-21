@@ -122,5 +122,9 @@ function formatTime(seconds){
 
     const secs = seconds % 60;
 
+    if(currentMode === "timer"){
+        return `${String(hours).padStart(2,"0")}:${String(minutes).padStart(2,"0")}:${String(secs).padStart(2,"0")}`;
+    }
+
     return `${String(minutes).padStart(2,"0")}:${String(secs).padStart(2,"0")}`;
 }
