@@ -128,3 +128,12 @@ function formatTime(seconds){
 
     return `${String(minutes).padStart(2,"0")}:${String(secs).padStart(2,"0")}`;
 }
+
+
+function updateDisplay(){
+    timerDisplay.textContent =
+        formatTime(remainingSeconds);
+
+    document.title =
+        `${formatTime(remainingSeconds)} • FocusFlow`;
+}
