@@ -69,3 +69,16 @@ const backgrounds = {
 function getToday(){
     return new Date().toISOString().split("T")[0];
 }
+
+
+function loadData(){
+
+    completedSessions =
+        savedData.completedSessions || 0;
+
+    totalFocusMinutes =
+        savedData.totalFocusMinutes || 0;
+
+    currentCycle =
+        savedData.currentCycle || 0;
+}
