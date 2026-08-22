@@ -192,3 +192,17 @@ function startTimer(){
 function pauseTimer(){
     stopTimer();
 }
+
+function resetTimer(){
+    stopTimer();
+
+    if(currentMode === "pomodoro"){
+        remainingSeconds =
+            currentPomoDuration * 60;
+
+        totalSeconds =
+            remainingSeconds;
+    }
+
+    updateDisplay();
+}
