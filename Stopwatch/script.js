@@ -137,3 +137,14 @@ function updateDisplay(){
     document.title =
         `${formatTime(remainingSeconds)} • FocusFlow`;
 }
+
+
+function stopTimer(){
+    clearInterval(timer);
+
+    timer = null;
+    isRunning = false;
+
+    startBtn.innerHTML =
+        '<i class="fa-solid fa-play"></i>';
+}
