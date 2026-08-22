@@ -204,5 +204,14 @@ function resetTimer(){
             remainingSeconds;
     }
 
+    if(currentMode === "stopwatch"){
+        remainingSeconds = 0;
+        totalSeconds = 0;
+    }
+
+    if(currentMode === "timer"){
+        setTimerFromInputs();
+    }
+
     updateDisplay();
 }
