@@ -165,4 +165,26 @@ function startTimer(){
 
     startBtn.innerHTML =
         '<i class="fa-solid fa-pause"></i>';
+
+    timer = setInterval(() => {
+
+        if(currentMode === "stopwatch"){
+            remainingSeconds++;
+
+            updateDisplay();
+
+            return;
+        }
+
+        if(remainingSeconds > 0){
+            remainingSeconds--;
+
+            updateDisplay();
+
+            return;
+        }
+
+        finishSession();
+
+    },1000);
 }
