@@ -148,3 +148,21 @@ function stopTimer(){
     startBtn.innerHTML =
         '<i class="fa-solid fa-play"></i>';
 }
+
+function startTimer(){
+    if(isRunning){
+        return;
+    }
+
+    if(
+        currentMode === "timer" &&
+        remainingSeconds <= 0
+    ){
+        setTimerFromInputs();
+    }
+
+    isRunning = true;
+
+    startBtn.innerHTML =
+        '<i class="fa-solid fa-pause"></i>';
+}
