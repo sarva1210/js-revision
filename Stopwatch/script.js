@@ -244,4 +244,9 @@ function setTimerFromInputs(){
     if(remainingSeconds === 0){
         remainingSeconds = 60;
     }
+
+    totalSeconds =
+        remainingSeconds;
+
+    updateDisplay();
 }
