@@ -250,3 +250,17 @@ function setTimerFromInputs(){
 
     updateDisplay();
 }
+
+
+function changeMode(mode){
+    stopTimer();
+
+    currentMode = mode;
+
+    modeButtons.forEach(button => {
+        button.classList.toggle(
+            "active",
+            button.dataset.mode === mode
+        );
+    });
+}    
