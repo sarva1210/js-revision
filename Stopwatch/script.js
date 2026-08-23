@@ -235,4 +235,13 @@ function setTimerFromInputs(){
             0,
             Number(secondsInput.value) || 0
         );
+
+    remainingSeconds =
+        hours * 3600 +
+        minutes * 60 +
+        seconds;
+
+    if(remainingSeconds === 0){
+        remainingSeconds = 60;
+    }
 }
