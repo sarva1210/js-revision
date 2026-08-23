@@ -263,4 +263,18 @@ function changeMode(mode){
             button.dataset.mode === mode
         );
     });
+
+    if(mode === "pomodoro"){
+        timerInputs.style.display = "none";
+        pomodoroControls.style.display = "flex";
+
+        remainingSeconds =
+            currentPomoDuration * 60;
+
+        totalSeconds =
+            remainingSeconds;
+
+        timerLabel.textContent =
+            "Focus Session";
+    }
 }    
