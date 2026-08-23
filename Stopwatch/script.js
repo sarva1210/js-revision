@@ -215,3 +215,24 @@ function resetTimer(){
 
     updateDisplay();
 }
+
+
+function setTimerFromInputs(){
+    const hours =
+        Math.max(
+            0,
+            Number(hoursInput.value) || 0
+        );
+
+    const minutes =
+        Math.max(
+            0,
+            Number(minutesInput.value) || 0
+        );
+
+    const seconds =
+        Math.max(
+            0,
+            Number(secondsInput.value) || 0
+        );
+}
