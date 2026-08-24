@@ -277,4 +277,15 @@ function changeMode(mode){
         timerLabel.textContent =
             "Focus Session";
     }
+
+    if(mode === "stopwatch"){
+        timerInputs.style.display = "none";
+        pomodoroControls.style.display = "none";
+
+        remainingSeconds = 0;
+        totalSeconds = 0;
+
+        timerLabel.textContent =
+            "Stopwatch";
+    }
 }    
