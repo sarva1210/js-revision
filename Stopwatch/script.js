@@ -298,4 +298,6 @@ function changeMode(mode){
 
         setTimerFromInputs();
     }
+
+    updateDisplay();
 }    
