@@ -322,4 +322,13 @@ function changePomodoroDuration(duration){
             currentPomoDuration
         );
     });
+
+    timerLabel.textContent = "Focus Session";
+
+    updateDisplay();
+
+    localStorage.setItem(
+        "focusflow-duration",
+        currentPomoDuration
+    );
 }
