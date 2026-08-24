@@ -288,4 +288,14 @@ function changeMode(mode){
         timerLabel.textContent =
             "Stopwatch";
     }
+
+    if(mode === "timer"){
+        timerInputs.style.display = "flex";
+        pomodoroControls.style.display = "none";
+
+        timerLabel.textContent =
+            "Custom Timer";
+
+        setTimerFromInputs();
+    }
 }    
