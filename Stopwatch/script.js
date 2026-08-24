@@ -301,3 +301,25 @@ function changeMode(mode){
 
     updateDisplay();
 }    
+
+
+function changePomodoroDuration(duration){
+    stopTimer();
+
+    currentPomoDuration =
+        Number(duration);
+
+    remainingSeconds =
+        currentPomoDuration * 60;
+
+    totalSeconds =
+        remainingSeconds;
+
+    pomoButtons.forEach(button => {
+        button.classList.toggle(
+            "active",
+            Number(button.dataset.duration) ===
+            currentPomoDuration
+        );
+    });
+}
