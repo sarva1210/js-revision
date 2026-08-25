@@ -444,3 +444,31 @@ function startBreak(minutes){
 
     startTimer();
 }
+
+
+function updateStats(){
+    const statElements =
+        document.querySelectorAll("[data-stat]");
+
+    statElements.forEach(element => {
+
+        const type =
+            element.dataset.stat;
+
+        if(type === "sessions"){
+            element.textContent =
+                `${completedSessions}/${dailyGoal}`;
+        }
+
+        if(type === "focus"){
+            element.textContent =
+                `${totalFocusMinutes} min`;
+        }
+
+        if(type === "cycle"){
+            element.textContent =
+                currentCycle;
+        }
+
+    });
+}
