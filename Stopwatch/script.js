@@ -355,3 +355,20 @@ function finishSession(){
         "Your timer has finished."
     );
 }
+
+function completeFocusSession(){
+    completedSessions++;
+
+    totalFocusMinutes +=
+        currentPomoDuration;
+
+    currentCycle++;
+
+    if(currentCycle > 4){
+        currentCycle = 1;
+    }
+
+    saveData();
+
+    updateStats();
+}
