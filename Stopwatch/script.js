@@ -412,3 +412,16 @@ function completeFocusSession(){
 
     updateDisplay();
 }
+
+function startBreak(minutes){
+    stopTimer();
+
+    currentPomoDuration =
+        minutes;
+
+    remainingSeconds =
+        minutes * 60;
+
+    totalSeconds =
+        remainingSeconds;
+}
