@@ -345,4 +345,13 @@ function finishSession(){
     remainingSeconds = 0;
 
     updateDisplay();
+
+    showToast(
+        "Timer completed!"
+    );
+
+    notifyUser(
+        "Timer Complete",
+        "Your timer has finished."
+    );
 }
