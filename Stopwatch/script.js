@@ -424,4 +424,15 @@ function startBreak(minutes){
 
     totalSeconds =
         remainingSeconds;
+
+    pomoButtons.forEach(button => {
+        button.classList.remove("active");
+    });
+
+    timerLabel.textContent =
+        minutes === 15
+            ? "Long Break"
+            : "Short Break";
+
+    updateDisplay();
 }
