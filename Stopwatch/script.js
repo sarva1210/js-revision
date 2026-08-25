@@ -435,4 +435,12 @@ function startBreak(minutes){
             : "Short Break";
 
     updateDisplay();
+
+    showToast(
+        minutes === 15
+            ? "Long break started"
+            : "Short break started"
+    );
+
+    startTimer();
 }
