@@ -371,4 +371,44 @@ function completeFocusSession(){
     saveData();
 
     updateStats();
+
+    showToast(
+        `Focus session ${completedSessions} completed!`
+    );
+
+    notifyUser(
+        "Focus Session Complete",
+        "Great work! Time for a break."
+    );
+
+    const longBreak =
+        completedSessions % 4 === 0;
+
+    if(autoStart.checked){
+        setTimeout(() => {
+
+            if(longBreak){
+                startBreak(15);
+            }else{
+                startBreak(5);
+            }
+
+        },1200);
+
+        return;
+    }
+
+    if(longBreak){
+        showToast(
+            "Amazing! Take a 15 minute break."
+        );
+    }else{
+        showToast(
+            "Great work! Take a 5 minute break."
+        );
+    }
+
+    remainingSeconds = 0;
+
+    updateDisplay();
 }
