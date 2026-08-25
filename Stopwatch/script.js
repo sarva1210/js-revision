@@ -332,3 +332,17 @@ function changePomodoroDuration(duration){
         currentPomoDuration
     );
 }
+
+function finishSession(){
+    stopTimer();
+
+    if(currentMode === "pomodoro"){
+        completeFocusSession();
+
+        return;
+    }
+
+    remainingSeconds = 0;
+
+    updateDisplay();
+}
