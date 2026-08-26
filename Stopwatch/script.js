@@ -537,4 +537,21 @@ function changeSound(sound){
         );
 
     });
+
+    const selectedButton =
+        document.querySelector(
+            `.sound-btn[data-sound="${sound}"]`
+        );
+
+    if(selectedButton){
+
+        const label =
+            selectedButton.querySelector("span");
+
+        if(label){
+            soundName.textContent =
+                label.textContent;
+        }
+
+    }
 }
