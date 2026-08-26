@@ -554,4 +554,12 @@ function changeSound(sound){
         }
 
     }
+
+    soundPlayBtn.innerHTML =
+        '<i class="fa-solid fa-play"></i>';
+
+    localStorage.setItem(
+        "focusflow-sound",
+        sound
+    );
 }
