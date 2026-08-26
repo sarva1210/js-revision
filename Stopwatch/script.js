@@ -513,3 +513,28 @@ function toggleSound(){
     soundPlayBtn.innerHTML =
         '<i class="fa-solid fa-play"></i>';
 }
+
+function changeSound(sound){
+    if(!sounds[sound]){
+        return;
+    }
+
+    currentSound = sound;
+
+    audioPlayer.pause();
+
+    audioPlayer.src =
+        sounds[sound];
+
+    audioPlayer.volume =
+        Number(volumeSlider.value);
+
+    soundButtons.forEach(button => {
+
+        button.classList.toggle(
+            "active",
+            button.dataset.sound === sound
+        );
+
+    });
+}
