@@ -477,4 +477,12 @@ function updateStats(){
             (completedSessions / dailyGoal) * 100,
             100
         );
+
+    const progressBar =
+        document.querySelector(".goal-progress");
+
+    if(progressBar){
+        progressBar.style.width =
+            `${progress}%`;
+    }
 }
