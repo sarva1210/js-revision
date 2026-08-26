@@ -486,3 +486,25 @@ function updateStats(){
             `${progress}%`;
     }
 }
+
+function toggleSound(){
+    if(audioPlayer.paused){
+
+        audioPlayer.play()
+            .then(() => {
+
+                soundPlayBtn.innerHTML =
+                    '<i class="fa-solid fa-pause"></i>';
+
+            })
+            .catch(() => {
+
+                showToast(
+                    "Add the audio files to assets/audio"
+                );
+
+            });
+
+        return;
+    }
+}
