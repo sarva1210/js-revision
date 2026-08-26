@@ -563,3 +563,14 @@ function changeSound(sound){
         sound
     );
 }
+
+function setVolume(value){
+    const volume =
+        Math.max(
+            0,
+            Math.min(
+                1,
+                Number(value)
+            )
+        );
+}
