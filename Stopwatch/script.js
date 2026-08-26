@@ -507,4 +507,9 @@ function toggleSound(){
 
         return;
     }
+
+    audioPlayer.pause();
+
+    soundPlayBtn.innerHTML =
+        '<i class="fa-solid fa-play"></i>';
 }
