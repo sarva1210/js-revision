@@ -471,4 +471,10 @@ function updateStats(){
         }
 
     });
+
+    const progress =
+        Math.min(
+            (completedSessions / dailyGoal) * 100,
+            100
+        );
 }
