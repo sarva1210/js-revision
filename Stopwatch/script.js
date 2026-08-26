@@ -573,4 +573,12 @@ function setVolume(value){
                 Number(value)
             )
         );
+
+    audioPlayer.volume =
+        volume;
+
+    localStorage.setItem(
+        "focusflow-volume",
+        volume
+    );
 }
