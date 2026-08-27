@@ -626,4 +626,13 @@ function changeBackground(background){
         );
 
     });
+
+    localStorage.setItem(
+        "focusflow-background",
+        background
+    );
+
+    showToast(
+        "Background changed"
+    );
 }
