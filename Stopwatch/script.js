@@ -652,4 +652,14 @@ function updateGreeting(){
         greetingText.textContent =
             "Good Evening";
     }
+
+    currentDate.textContent =
+        now.toLocaleDateString(
+            "en-US",
+            {
+                weekday:"long",
+                month:"long",
+                day:"numeric"
+            }
+        );
 }
