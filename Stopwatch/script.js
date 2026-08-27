@@ -590,4 +590,40 @@ function changeBackground(background){
 
     document.body.style.backgroundImage =
         `url("${backgrounds[background]}")`;
+
+    backgroundOptions.forEach(option => {
+
+        option.classList.toggle(
+            "active",
+            option.dataset.background === background
+        );
+
+    });
+
+    backgroundOptions.forEach(option => {
+
+        option.classList.toggle(
+            "active",
+            option.dataset.background === background
+        );
+
+    });
+
+    localStorage.setItem(
+        "focusflow-background",
+        background
+    );
+
+    showToast(
+        "Background changed"
+    );
+
+    backgroundOptions.forEach(option => {
+
+        option.classList.toggle(
+            "active",
+            option.dataset.background === background
+        );
+
+    });
 }
