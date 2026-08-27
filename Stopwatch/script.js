@@ -582,3 +582,12 @@ function setVolume(value){
         volume
     );
 }
+
+function changeBackground(background){
+    if(!backgrounds[background]){
+        return;
+    }
+
+    document.body.style.backgroundImage =
+        `url("${backgrounds[background]}")`;
+}
