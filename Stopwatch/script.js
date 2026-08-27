@@ -676,4 +676,13 @@ function showToast(message){
     clearTimeout(
         showToast.timeout
     );
+
+    showToast.timeout =
+        setTimeout(() => {
+
+            toast.classList.remove(
+                "show"
+            );
+
+        },2200);
 }
