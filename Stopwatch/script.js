@@ -677,12 +677,10 @@ function showToast(message){
         showToast.timeout
     );
 
-    showToast.timeout =
-        setTimeout(() => {
+    showToast.timeout =setTimeout(() => {
+        toast.classList.remove(
+            "show"
+        );
 
-            toast.classList.remove(
-                "show"
-            );
-
-        },2200);
+    },2200);
 }
