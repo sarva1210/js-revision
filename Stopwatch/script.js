@@ -663,3 +663,17 @@ function updateGreeting(){
             }
         );
 }
+
+
+function showToast(message){
+    toast.textContent =
+        message;
+
+    toast.classList.add(
+        "show"
+    );
+
+    clearTimeout(
+        showToast.timeout
+    );
+}
