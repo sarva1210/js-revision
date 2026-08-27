@@ -636,3 +636,20 @@ function changeBackground(background){
         "Background changed"
     );
 }
+
+
+function updateGreeting(){
+    const now = new Date();
+    const hour = now.getHours();
+
+    if(hour < 12){
+        greetingText.textContent =
+            "Good Morning";
+    }else if(hour < 18){
+        greetingText.textContent =
+            "Good Afternoon";
+    }else{
+        greetingText.textContent =
+            "Good Evening";
+    }
+}
