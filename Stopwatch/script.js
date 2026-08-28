@@ -725,4 +725,8 @@ function toggleBackgroundMenu(){
     backgroundMenu.classList.toggle(
         "show"
     );
+
+    settingsMenu.classList.remove(
+        "show"
+    );
 }
