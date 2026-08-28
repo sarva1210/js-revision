@@ -685,3 +685,12 @@ function showToast(message){
 }
 
 
+function notifyUser(title,message){
+    if(
+        !notifications ||
+        !notifications.checked ||
+        !("Notification" in window)
+    ){
+        return;
+    }
+}
