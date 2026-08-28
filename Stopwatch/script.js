@@ -653,15 +653,14 @@ function updateGreeting(){
             "Good Evening";
     }
 
-    currentDate.textContent =
-        now.toLocaleDateString(
-            "en-US",
-            {
-                weekday:"long",
-                month:"long",
-                day:"numeric"
-            }
-        );
+    currentDate.textContent = now.toLocaleDateString(
+        "en-US",
+        {
+            weekday:"long",
+            month:"long",
+            day:"numeric"
+        }
+    );
 }
 
 
@@ -684,3 +683,5 @@ function showToast(message){
 
     },2200);
 }
+
+
