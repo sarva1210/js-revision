@@ -693,4 +693,18 @@ function notifyUser(title,message){
     ){
         return;
     }
+
+    if(
+        Notification.permission ===
+        "granted"
+    ){
+
+        new Notification(
+            title,
+            {
+                body:message
+            }
+        );
+
+    }
 }
