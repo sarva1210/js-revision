@@ -719,3 +719,10 @@ function requestNotificationPermission(){
         Notification.requestPermission();
     }
 }
+
+
+function toggleBackgroundMenu(){
+    backgroundMenu.classList.toggle(
+        "show"
+    );
+}
