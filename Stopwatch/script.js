@@ -740,3 +740,18 @@ function toggleSettingsMenu(){
         "show"
     );
 }
+
+
+async function toggleFullscreen(){
+    if(!document.fullscreenElement){
+
+        await document.documentElement.requestFullscreen();
+        fullscreenBtn.innerHTML = '<i class="fa-solid fa-compress"></i>';
+
+    }else{
+
+        await document.exitFullscreen();
+        fullscreenBtn.innerHTML = '<i class="fa-solid fa-expand"></i>';
+
+    }
+}
