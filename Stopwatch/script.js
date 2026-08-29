@@ -730,3 +730,9 @@ function toggleBackgroundMenu(){
         "show"
     );
 }
+
+function toggleSettingsMenu(){
+    settingsMenu.classList.toggle(
+        "show"
+    );
+}
