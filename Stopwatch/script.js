@@ -743,15 +743,21 @@ function toggleSettingsMenu(){
 
 
 async function toggleFullscreen(){
-    if(!document.fullscreenElement){
+    try{
 
-        await document.documentElement.requestFullscreen();
-        fullscreenBtn.innerHTML = '<i class="fa-solid fa-compress"></i>';
+        if(!document.fullscreenElement){
 
-    }else{
+            await document.documentElement .requestFullscreen();
+            fullscreenBtn.innerHTML = '<i class="fa-solid fa-compress"></i>';
 
-        await document.exitFullscreen();
-        fullscreenBtn.innerHTML = '<i class="fa-solid fa-expand"></i>';
+        }else{
+
+            await document.exitFullscreen();
+            fullscreenBtn.innerHTML = '<i class="fa-solid fa-expand"></i>';
+
+        }
+
+    }catch(error){
 
     }
 }
