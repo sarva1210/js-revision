@@ -759,5 +759,9 @@ async function toggleFullscreen(){
 
     }catch(error){
 
+        showToast(
+            "Fullscreen unavailable"
+        );
+
     }
 }
