@@ -782,4 +782,18 @@ function loadSettings(){
             savedBackground
         );
     }
+
+    const savedSound =
+        localStorage.getItem(
+            "focusflow-sound"
+        );
+
+    if(
+        savedSound &&
+        sounds[savedSound]
+    ){
+        changeSound(
+            savedSound
+        );
+    }
 }
