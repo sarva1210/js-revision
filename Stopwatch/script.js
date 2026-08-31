@@ -856,4 +856,10 @@ function handleKeyboard(event){
     ){
         resetTimer();
     }
+
+    if(
+        event.key.toLowerCase() === "b"
+    ){
+        toggleBackgroundMenu();
+    }
 }
