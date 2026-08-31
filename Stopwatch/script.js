@@ -818,15 +818,8 @@ function loadSettings(){
         );
 
     if(savedDuration){
-
-        currentPomoDuration =
-            Number(savedDuration);
-
-        remainingSeconds =
-            currentPomoDuration * 60;
-
-        totalSeconds =
-            remainingSeconds;
-
+        currentPomoDuration =  Number(savedDuration);
+        remainingSeconds = currentPomoDuration * 60;
+        totalSeconds = remainingSeconds;
     }
 }
