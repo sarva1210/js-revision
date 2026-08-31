@@ -823,3 +823,15 @@ function loadSettings(){
         totalSeconds = remainingSeconds;
     }
 }
+
+
+function handleKeyboard(event){
+
+    const activeElement =
+        document.activeElement;
+
+    const typing = activeElement && (
+        activeElement.tagName === "INPUT" ||
+        activeElement.tagName === "TEXTAREA"
+    );
+}
