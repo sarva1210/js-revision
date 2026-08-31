@@ -834,4 +834,20 @@ function handleKeyboard(event){
         activeElement.tagName === "INPUT" ||
         activeElement.tagName === "TEXTAREA"
     );
+
+    if(typing){
+        return;
+    }
+
+    if(event.code === "Space"){
+
+        event.preventDefault();
+
+        if(isRunning){
+            pauseTimer();
+        }else{
+            startTimer();
+        }
+
+    }
 }
