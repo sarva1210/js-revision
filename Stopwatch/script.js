@@ -850,4 +850,10 @@ function handleKeyboard(event){
         }
 
     }
+
+    if(
+        event.key.toLowerCase() === "r"
+    ){
+        resetTimer();
+    }
 }
