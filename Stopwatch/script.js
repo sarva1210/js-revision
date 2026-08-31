@@ -796,4 +796,25 @@ function loadSettings(){
             savedSound
         );
     }
+
+    const savedVolume =
+        localStorage.getItem(
+            "focusflow-volume"
+        );
+
+    if(savedVolume !== null){
+
+        volumeSlider.value =
+            savedVolume;
+
+        audioPlayer.volume =
+            Number(savedVolume);
+
+    }else{
+
+        volumeSlider.value = 0.5;
+
+        audioPlayer.volume = 0.5;
+
+    }
 }
