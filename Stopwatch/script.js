@@ -765,3 +765,21 @@ async function toggleFullscreen(){
 
     }
 }
+
+
+function loadSettings(){
+
+    const savedBackground =
+        localStorage.getItem(
+            "focusflow-background"
+        );
+
+    if(
+        savedBackground &&
+        backgrounds[savedBackground]
+    ){
+        changeBackground(
+            savedBackground
+        );
+    }
+}
