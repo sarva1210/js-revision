@@ -811,4 +811,22 @@ function loadSettings(){
         volumeSlider.value = 0.5;
         audioPlayer.volume = 0.5;
     }
+
+    const savedDuration =
+        localStorage.getItem(
+            "focusflow-duration"
+        );
+
+    if(savedDuration){
+
+        currentPomoDuration =
+            Number(savedDuration);
+
+        remainingSeconds =
+            currentPomoDuration * 60;
+
+        totalSeconds =
+            remainingSeconds;
+
+    }
 }
