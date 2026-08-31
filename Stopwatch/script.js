@@ -862,4 +862,10 @@ function handleKeyboard(event){
     ){
         toggleBackgroundMenu();
     }
+
+    if(
+        event.key.toLowerCase() === "s"
+    ){
+        toggleSettingsMenu();
+    }
 }
