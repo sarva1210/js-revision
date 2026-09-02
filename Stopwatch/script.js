@@ -885,11 +885,9 @@ function handleKeyboard(event){
 modeButtons.forEach(button => {
 
     button.addEventListener( "click", () => {
-
             changeMode(
                 button.dataset.mode
             );
 
         } );
-
 });
