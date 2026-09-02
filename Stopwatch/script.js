@@ -868,4 +868,16 @@ function handleKeyboard(event){
     ){
         toggleSettingsMenu();
     }
+
+    if(event.key === "Escape"){
+
+        backgroundMenu.classList.remove(
+            "show"
+        );
+
+        settingsMenu.classList.remove(
+            "show"
+        );
+
+    }
 }
