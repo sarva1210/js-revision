@@ -827,8 +827,7 @@ function loadSettings(){
 
 function handleKeyboard(event){
 
-    const activeElement =
-        document.activeElement;
+    const activeElement = document.activeElement;
 
     const typing = activeElement && (
         activeElement.tagName === "INPUT" ||
