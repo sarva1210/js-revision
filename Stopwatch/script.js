@@ -886,5 +886,18 @@ modeButtons.forEach(button => {
 
     button.addEventListener( "click", () => {
         changeMode( button.dataset.mode );
-    } );
+    });
+
+});
+
+pomoButtons.forEach(button => {
+
+    button.addEventListener( "click", () => {
+
+            changePomodoroDuration(
+                button.dataset.duration
+            );
+
+    });
+
 });
