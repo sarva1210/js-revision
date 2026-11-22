@@ -58,9 +58,7 @@ function startTimer(){
 
 // Stop timer
 function stopTimer(){
-
     clearInterval(timerInterval);
-
 }
 
 // Shuffle array
