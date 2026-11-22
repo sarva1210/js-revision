@@ -37,13 +37,11 @@ let gameStarted = false;
 
 // Start timer
 function startTimer(){
-
     if(gameStarted) return;
 
     gameStarted = true;
 
     timerInterval = setInterval(()=>{
-
         seconds++;
 
         if(seconds === 60){
