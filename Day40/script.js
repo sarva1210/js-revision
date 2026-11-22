@@ -76,7 +76,6 @@ function shuffle(array){
 
 // Create board
 function createBoard(){
-
     gameBoard.innerHTML="";
 
     cards=[...icons,...icons];
@@ -84,7 +83,6 @@ function createBoard(){
     shuffle(cards);
 
     cards.forEach(icon=>{
-
         const card=document.createElement("div");
 
         card.className="memory-card";
@@ -105,7 +103,6 @@ function createBoard(){
         gameBoard.appendChild(card);
 
     });
-
 }
 
 // Reset game
