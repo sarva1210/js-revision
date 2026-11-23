@@ -166,13 +166,9 @@ function flipCard(){
 function checkMatch(){
 
     if(firstCard.dataset.icon===secondCard.dataset.icon){
-
         matchCards();
-
     }else{
-
         unflipCards();
-
     }
 
 }
