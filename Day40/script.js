@@ -107,7 +107,6 @@ function createBoard(){
 
 // Reset game
 function resetGame(){
-
     stopTimer();
 
     firstCard=null;
@@ -127,7 +126,6 @@ function resetGame(){
     popup.classList.remove("show");
 
     createBoard();
-
 }
 
 // Restart button
