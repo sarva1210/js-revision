@@ -153,15 +153,12 @@ function flipCard(){
     }
 
     secondCard=this;
-
     lockBoard=true;
-
     moveCount++;
 
     moves.textContent=moveCount;
 
     updateScore();
-
     checkMatch();
 }
 
