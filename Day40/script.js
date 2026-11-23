@@ -139,7 +139,6 @@ createBoard();
 
 // Flip card
 function flipCard(){
-
     if(lockBoard) return;
 
     if(this===firstCard) return;
@@ -149,11 +148,8 @@ function flipCard(){
     this.classList.add("flip");
 
     if(!firstCard){
-
         firstCard=this;
-
         return;
-
     }
 
     secondCard=this;
@@ -167,7 +163,6 @@ function flipCard(){
     updateScore();
 
     checkMatch();
-
 }
 
 // Check match
