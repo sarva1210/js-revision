@@ -70,7 +70,6 @@ function shuffle(array){
         [array[i],array[j]]=[array[j],array[i]];
 
     }
-
     return array;
 }
 
@@ -177,11 +176,9 @@ function checkMatch(){
 function matchCards(){
 
     firstCard.classList.add("matched");
-
     secondCard.classList.add("matched");
 
     firstCard.removeEventListener("click",flipCard);
-
     secondCard.removeEventListener("click",flipCard);
 
     matchedPairs++;
