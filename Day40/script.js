@@ -188,11 +188,8 @@ function matchCards(){
     resetTurn();
 
     if(matchedPairs===8){
-
         stopTimer();
-
         showPopup();
-
     }
 
 }
