@@ -219,17 +219,11 @@ function resetTurn(){
 function updateScore(){
 
     if(moveCount<=12){
-
         score.textContent="★★★";
-
     }else if(moveCount<=18){
-
         score.textContent="★★☆";
-
     }else{
-
         score.textContent="★☆☆";
-
     }
 
 }
