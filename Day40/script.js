@@ -210,11 +210,9 @@ function unflipCards(){
 function resetTurn(){
 
     firstCard=null;
-
     secondCard=null;
 
     lockBoard=false;
-
 }
 
 // Update score
