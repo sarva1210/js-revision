@@ -262,9 +262,7 @@ function saveBestScore(){
     const best=JSON.parse(localStorage.getItem("memoryBestScore"));
 
     if(!best||current.moves<best.moves||(current.moves===best.moves&&current.time<best.time)){
-
         localStorage.setItem("memoryBestScore",JSON.stringify(current));
-
     }
 
 }
