@@ -230,9 +230,7 @@ function updateScore(){
 
 // Disable board
 function disableBoard(){
-
     lockBoard=true;
-
 }
 
 // Enable board
