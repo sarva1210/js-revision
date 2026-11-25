@@ -235,9 +235,7 @@ function disableBoard(){
 
 // Enable board
 function enableBoard(){
-
     lockBoard=false;
-
 }
 
 
