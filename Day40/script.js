@@ -243,13 +243,10 @@ function enableBoard(){
 function showPopup(){
 
     finalTime.textContent=timer.textContent;
-
     finalMoves.textContent=moveCount;
-
     finalScore.textContent=score.textContent;
 
     popup.classList.add("show");
-
     saveBestScore();
 
 }
