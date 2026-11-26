@@ -319,9 +319,7 @@ document.addEventListener("dragstart",e=>{
 
 // Prevent double click selection
 document.addEventListener("selectstart",e=>{
-
     e.preventDefault();
-
 });
 
 // Keyboard restart
