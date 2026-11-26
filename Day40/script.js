@@ -278,7 +278,6 @@ popup.addEventListener("click",e=>{
 
 // Restart game
 function restartGame(){
-
     stopTimer();
 
     clearInterval(timerInterval);
@@ -303,7 +302,6 @@ function restartGame(){
     popup.classList.remove("show");
 
     createBoard();
-
 }
 
 // Restart button
