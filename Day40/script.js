@@ -271,9 +271,7 @@ function saveBestScore(){
 popup.addEventListener("click",e=>{
 
     if(e.target===popup){
-
         popup.classList.remove("show");
-
     }
 
 });
