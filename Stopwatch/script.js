@@ -171,7 +171,6 @@ function startTimer(){
             remainingSeconds++;
 
             updateDisplay();
-
             return;
         }
 
