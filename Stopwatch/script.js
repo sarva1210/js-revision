@@ -241,8 +241,7 @@ function setTimerFromInputs(){
         remainingSeconds = 60;
     }
 
-    totalSeconds =
-        remainingSeconds;
+    totalSeconds = remainingSeconds;
 
     updateDisplay();
 }
