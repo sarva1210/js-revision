@@ -178,12 +178,10 @@ function startTimer(){
             remainingSeconds--;
 
             updateDisplay();
-
             return;
         }
 
         finishSession();
-
     },1000);
 }
 
