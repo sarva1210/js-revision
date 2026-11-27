@@ -86,7 +86,6 @@ function loadData(){
         currentCycle = 0;
 
         saveData();
-
         return;
     }
 
